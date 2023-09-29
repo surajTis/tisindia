@@ -1,7 +1,5 @@
 import '../public/css/bootstrap.min.css';
 import '../public/css/style.css';
-import '../public/css/slick.css';
-import '../public/css/aos.css';
 import LoadingBar from 'react-top-loading-bar'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react';
