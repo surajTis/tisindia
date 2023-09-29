@@ -20,11 +20,6 @@ export const getPageStaticProps = async (context) => {
             }
             mainContent {
               mainContent {
-                ... on Page_Maincontent_MainContent_ContentBlock {
-                  fieldGroupName
-                  contentBlockDescription
-                  contentBlockTitle
-                }
                 ... on Page_Maincontent_MainContent_HomeBanner {
                   fieldGroupName
                   homeBannerContent {
@@ -33,76 +28,6 @@ export const getPageStaticProps = async (context) => {
                     homeBannerCta {
                       homeBannerCtaText
                       homeBannerCtaLink
-                    }
-                  }
-                }
-                ... on Page_Maincontent_MainContent_ServiceBlock {
-                  fieldGroupName
-                  serviceBlockHeading
-                  serviceBlocks {
-                    serviceBlockTitle
-                    serviceBlockContent
-                    serviceBlockImage {
-                      sourceUrl
-                    }
-                  }
-                }
-                ... on Page_Maincontent_MainContent_WhyChooseBlock {
-                  fieldGroupName
-                  whyChooseLeftContent
-                  whyChooseRightImage {
-                    sourceUrl
-                  }
-                  whyChooseBlocks {
-                    whyChooseBlockTitle
-                    whyChooseBlockContent
-                  }
-                }
-                ... on Page_Maincontent_MainContent_FaqBlock {
-                  faqBlockTitle
-                  fieldGroupName
-                  faqBlocks {
-                    faqQuestion
-                    faqAnswer
-                  }
-                }
-                ... on Page_Maincontent_MainContent_GrowBusinessBlock {
-                  fieldGroupName
-                  growBusinessBlock {
-                    growBusinessBlockHeading
-                    growBusinessBlocks {
-                      growBusinessBlockTitle
-                      growBusinessBlockContent
-                      growBusinessBlockImage {
-                        sourceUrl
-                      }
-                    }
-                  }
-                }
-                ... on Page_Maincontent_MainContent_BestSeoCompanyBlock {
-                  bestSeoCompanyBlock
-                  fieldGroupName
-                  bestSeoCompanyBlocksWithGrid {
-                    bestSeoCompanyBlocksContent
-                    bestSeoCompanyBlocksGrid
-                  }
-                }
-                ... on Page_Maincontent_MainContent_RecentResultsBlock {
-                  fieldGroupName
-                  recentResultsBlockTitle
-                  recentResultsBlockSlider {
-                    recentResultsBlockSliderImage {
-                      sourceUrl
-                    }
-                  }
-                }
-                ... on Page_Maincontent_MainContent_TestimonialBlock {
-                  fieldGroupName
-                  testimonialBlockTitle
-                  testimonialBlockSlider {
-                    testimonialBlockSliderContent
-                    testimonialBlockSliderImage {
-                      sourceUrl
                     }
                   }
                 }

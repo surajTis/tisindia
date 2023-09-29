@@ -16,7 +16,7 @@ const defaultOptions = {
 
 
 const client = new ApolloClient({
-  uri: 'https://getaprogrammer.co.uk/onlineseodev/graphql',
+  uri: 'https://tisdev.tisprojects.com/backend/graphql',
   cache: new InMemoryCache({
     // just totally disable caching
     dataIdFromObject: () => (null),
