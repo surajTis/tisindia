@@ -8,6 +8,7 @@ export const MainMenu = ({
   return (
     <>
       <header className="header">
+        demo
         <ul>
           {(items || []).map((item) => (
             <li key={item.id}>
