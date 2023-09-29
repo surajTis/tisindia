@@ -8,6 +8,7 @@ export const MainMenu = ({
   return (
     <>
       <header className="header">
+        ram
         demo
         <ul>
           {(items || []).map((item) => (
