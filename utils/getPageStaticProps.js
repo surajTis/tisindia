@@ -1,13 +1,11 @@
 import { gql } from "@apollo/client";
 import client from "client";
 import { mapMainMenuItems } from "./mapMainMenuItems";
-export const getPageStaticProps = async (context) => { 
-
+export const getPageStaticProps = async (context) => {
   console.log("CONTEXT: ", context);
   const uri = context.params?.slug ? `/${context.params.slug.join("/")}/` : "/";
-  
+
   const { data } = await client.query({
-    
     query: gql`
       query PageQuery($uri: String!) {
         nodeByUri(uri: $uri) {
@@ -24,11 +22,12 @@ export const getPageStaticProps = async (context) => {
                   fieldGroupName
                   homeBannerContent {
                     homeBannerTitle
-                    homeBannerContent
-                    homeBannerCta {
-                      homeBannerCtaText
-                      homeBannerCtaLink
+                    homeBannerSubtitle
+                    homeBannerImage {
+                      guid
+                      altText
                     }
+                    homeBannerContent
                   }
                 }
               }
@@ -79,7 +78,6 @@ export const getPageStaticProps = async (context) => {
             }
           }
         }
-
       }
     `,
     variables: {
@@ -97,5 +95,4 @@ export const getPageStaticProps = async (context) => {
       footerMenuItems: data.acfOptionsMainMenu.footerMenu,
     },
   };
-}
-
+};
