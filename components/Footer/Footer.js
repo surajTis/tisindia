@@ -81,13 +81,13 @@ export const Footer = ({ items }) => {
                 </p>
                 <ul className="social-icons">
                   <li>
-                    <Link href="#"><i class="fa-brands fa-linkedin-in"></i></Link>
+                    <Link href="#"><i className="fa-brands fa-linkedin-in"></i></Link>
                   </li>
                   <li>
-                    <Link href="#"><i class="fa-brands fa-facebook-f"></i></Link>
+                    <Link href="#"><i className="fa-brands fa-facebook-f"></i></Link>
                   </li>
                   <li>
-                    <Link href=""><i class="fa-brands fa-twitter"></i></Link>
+                    <Link href=""><i className="fa-brands fa-twitter"></i></Link>
                   </li>
                 </ul>
               </div>
