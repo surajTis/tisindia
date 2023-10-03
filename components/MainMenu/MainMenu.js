@@ -12,7 +12,7 @@ export const MainMenu = ({
           {(items || []).map((item) => (
             <li key={item.id}>
               <Link href={item.destination}>
-                <a>{item.label}</a>
+              {item.label}
               </Link>
 
               {!!item.subMenuItems?.length && (

@@ -9,7 +9,7 @@ export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
                         <div className="col-lg-2"></div>
                         <div className="col-lg-6">
                             <h1 data-aos="fade-up" className="aos-init aos-animate">{parse(bannerTitle)}</h1>
-                            <p  className="aos-init">{parse(bannerContent)}</p>
+                            <p  className="aos-init"></p>
                             <a href="#" className="btn aos-init" data-aos="fade-up">Contact Us</a>
                         </div>
                         <div className="col-lg-4">
