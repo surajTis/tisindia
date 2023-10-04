@@ -1,4 +1,5 @@
 import parse from "html-react-parser";
+import Link from "next/link";
 import Image from "next/image";
 import banner from "../../public/assets/img/banner/hero-home-right.webp";
 export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
