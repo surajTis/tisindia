@@ -12,19 +12,23 @@ export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
                             <h1 data-aos="fade-up" className="aos-init aos-animate">{parse(bannerTitle)}</h1>
                             <h2>Digital Agency in india</h2>
                             <p  className="aos-init">
-                            <a href="/services/saas-product-development" class="is-size-7 has-text-grey-lighter has-margin-right-10">
+                            <Link href="/" class="">
                                 #Website design
-                                </a> <a href="/services/ecommerce-development" class="is-size-7 has-text-grey-lighter has-margin-right-10">
+                                </Link> 
+                                <Link href="/" class="">
                                 #eCommerce
-                                </a> <a href="/services/application-development" class="is-size-7 has-text-grey-lighter has-margin-right-10">
+                                </Link> 
+                                <Link href="/" class="">
                                 #WebApp
-                                </a> <a href="/services/api-development" class="is-size-7 has-text-grey-lighter has-margin-right-10">
+                                </Link> 
+                                <Link href="/" class="">
                                 #API
-                                </a> <a href="/services/cms-development" class="is-size-7 has-text-grey-lighter has-margin-right-10">
+                                </Link> 
+                                <Link href="/" class="">
                                 #CMS
-                                </a>
+                                </Link>
                             </p>
-                            <a href="#" className="btn aos-init" data-aos="fade-up">Let's start a project</a>
+                            <Link href="/" className="btn aos-init" data-aos="fade-up">Let's start a project</Link>
                         </div>
                         <div className="col-lg-6">
                             <Image src={banner} alt='images'></Image>
