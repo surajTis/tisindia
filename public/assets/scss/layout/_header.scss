@@ -6,9 +6,9 @@
     justify-content: space-between;
     @media #{$xxl,$xl} {
     }
-    .logo{
+    .logo{padding: .5rem 0rem; 
       a{
-        padding: .5rem 1.125rem;
+        
       }
     }
   .nav-area{
@@ -26,6 +26,7 @@
             color: var(--tp-common-white);
             display: block;
             padding: .5rem 1.125rem;;
+            font-size: var(--tp-fz-p);
             &:hover,
             &.active {
               color: var(--tp-text-body);
@@ -102,13 +103,14 @@
       .mobile-no{
         & > a{
            color: var(--tp-common-white);
-          display: block;
+          display: block;padding: 0.5rem 1.125rem;font-size: var(--tp-fz-p);
         }
       }
       .contact-btn{
         & > a{
            color: var(--tp-common-white);
-          display: block;
+          display: block;padding: 0.3rem 1.125rem;font-size: var(--tp-fz-p);
+          border:1px solid  var(--tp-common-white);border-radius: 4px; font-weight: var(--tp-fw-medium);
         }
       }
     }
