@@ -25,6 +25,8 @@ export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
                                 </a>
                             </p>
                             <a href="#" className="btn aos-init" data-aos="fade-up">Let's start a project</a>
+                            <p  className="aos-init"></p>
+                            <a href="#" className="btn aos-init" data-aos="fade-up">Contact Us</a>
                         </div>
                         <div className="col-lg-6">
                             <Image src={banner} alt='images'></Image>

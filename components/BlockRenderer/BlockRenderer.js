@@ -9,8 +9,9 @@ export const BlockRenderer = ({ blocks }) => {
           <Banner
             key={i}
             bannerTitle={block.homeBannerContent.homeBannerTitle}
+            bannerSubTitle={block.homeBannerContent.homeBannerSubtitle}
+            bannerImage={block.homeBannerContent.homeBannerImage}
             bannerContent={block.homeBannerContent.homeBannerContent}
-            bannerCta={block.homeBannerContent.homeBannerCta}
           />
         );
       }
