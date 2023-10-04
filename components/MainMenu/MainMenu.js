@@ -2,16 +2,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/img/logo/sticky-logo-white-01.svg";
-
+import useSticky from "hooks/use-sticky";
 export const MainMenu = ({
   items,
   callToActionLabel,
   callToActionDestination,
 }) => {
+
+  const { sticky } = useSticky();
   
   return (
     <>
-      <header className="header">
+      <header className={`header ${sticky ? "header-sticky" : ""}`}>
         <div className="container">
           <div className="header-row">
             <div className="logo">
