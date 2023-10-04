@@ -131,6 +131,7 @@
   z-index: 99;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   background: var(--tp-common-white);
+  background-image: linear-gradient(to right top,#02a7da,#00a7cd,#00a6bf,#00a4af,#00a29e,#00a294,#00a288,#16a27b,#1ca571,#28a865,#37aa58,#46ac48);;
   & .tp-bt-btn {
     box-shadow: rgba(100, 100, 111, 0.1) 1px 5px 20px 1px;
   }
