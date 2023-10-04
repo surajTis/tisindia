@@ -23,8 +23,8 @@ export const Page = (props) => {
         callToActionDestination={props.callToActionDestination}
         callToActionLabel={props.callToActionLabel}
       />
-      <BlogInsight />
       <BlockRenderer blocks={props.blockContent} />
+      <BlogInsight />
       <Footer items={props.footerMenuItems}/>
     </PageWrapper>
   );
