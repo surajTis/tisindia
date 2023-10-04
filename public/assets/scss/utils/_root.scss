@@ -21,6 +21,15 @@
     }
 
     /**
+     @font Weight declaration
+    */
+    @each $fw, $shades in $font-scale{
+        @each $shade, $value in $shades {
+            --tp-#{$fw}-#{$shade}: #{$value};
+        }
+    }
+
+    /**
     
     @color declaration
     */
