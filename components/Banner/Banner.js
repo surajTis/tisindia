@@ -39,5 +39,4 @@ export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
       </div>
     </>
   );
-};
-
+}
