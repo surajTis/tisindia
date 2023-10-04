@@ -20,11 +20,6 @@ export const MainMenu = ({
                   height={60}
                   alt="Picture of the author"
                 />
-        <ul>
-          {(items || []).map((item) => (
-            <li key={item.id}>
-              <Link href={item.destination}>
-              {item.label}
               </Link>
             </div>
             <div className="nav-area">
