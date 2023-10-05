@@ -1,0 +1,66 @@
+.case-studay-outer{ padding: 3rem 0; background: linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd);
+    .case-studay-main{
+        h2{
+            color: var(--tp-heading-primary); margin-bottom: 0.5rem;font-size:var(--tp-fz-h2); font-weight: var(--tp-fw-bold);
+            margin-bottom: 30px;
+        }
+        .case-study-one{
+            .slick-list{
+                padding: 0 !important;
+            }
+            .slick-slide{
+                & > div {background-color: var(--tp-common-white); margin: 8px 15px; text-align: center; padding: 10px 8px;
+                    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.07); border:1px solid #e1e1e1; border-radius: 4px;}
+            }
+            .slick-slide.slick-center.slick-current{ 
+                & > div{border-color: #00a28b;box-shadow: 0px 0px 10px 0px rgba(0, 162, 139, 0.3);}
+            }
+        }
+        .case-study-two{ padding: 40px 0px 30px;
+            .case-slide{
+                display: flex !important; overflow: hidden; padding: 20px;
+                .case-slide-bx-left{
+                   width: 33.33%; position: relative;margin-left: -27px; min-width: 380px;
+                    h3{
+                        display: flex; align-items: center; position: absolute; top:0;
+                    }
+                    ul{
+                        padding-left: 28px;
+                        position: relative;
+                        margin-top:67px;
+                        &::after{
+                            border-left: 2px solid #8bc6f4;
+                            content: " ";
+                            height: 100%;
+                            left: 28px;
+                            position: absolute;
+                            top: -12px;
+                            width: 1px;
+                        }
+                        li{
+                            padding-left: 32px;margin-bottom: 20px; position: relative;
+                            a{
+                                text-transform: lowercase !important;
+                            }
+                            &::after{
+                                border-bottom: 2px dotted #8bc6f4;
+                                content: " ";
+                                position: absolute;
+                                left: 0;
+                                top: 14px;
+                                transition: all .5s ease;
+                                width: 29px;
+                            }
+                        }
+                    }
+                }
+                .case-slide-bx-right{
+                    border-radius: 18px;
+                    box-shadow: 0 1px 16px 0 #81c2dc,0 0 0 1px rgba(170,215,248,.89);
+                    padding: 10px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
