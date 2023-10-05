@@ -9,7 +9,7 @@ export const MainMenu = ({
     <>
       <header className="header">
         ram
-        demo1
+        demo
         <ul>
           {(items || []).map((item) => (
             <li key={item.id}>

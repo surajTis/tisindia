@@ -25,10 +25,7 @@ export const getPageStaticProps = async (context) => {
                   homeBannerContent {
                     homeBannerTitle
                     homeBannerContent
-                    homeBannerCta {
-                      homeBannerCtaText
-                      homeBannerCtaLink
-                    }
+                   
                   }
                 }
               }
