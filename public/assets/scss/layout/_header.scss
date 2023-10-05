@@ -6,9 +6,9 @@
     justify-content: space-between;
     @media #{$xxl,$xl} {
     }
-    .logo{
+    .logo{padding: .5rem 0rem; 
       a{
-        padding: .5rem 1.125rem;
+        
       }
     }
   .nav-area{
@@ -26,18 +26,19 @@
             color: var(--tp-common-white);
             display: block;
             padding: .5rem 1.125rem;;
+            font-size: var(--tp-fz-p);
             &:hover,
             &.active {
               color: var(--tp-text-body);
             }
             @media #{$xxl} {
-              font-size: 12px;
+              
             }
             @media #{$xxl,$xl} {
-              margin: 0 20px;
+              
             }
             @media #{$xl} {
-              font-size: 12px;
+              
             }
           }
           // &.has-dropdown {
@@ -102,13 +103,14 @@
       .mobile-no{
         & > a{
            color: var(--tp-common-white);
-          display: block;
+          display: block;padding: 0.5rem 1.125rem;font-size: var(--tp-fz-p);
         }
       }
       .contact-btn{
         & > a{
            color: var(--tp-common-white);
-          display: block;
+          display: block;padding: 0.3rem 1.125rem;font-size: var(--tp-fz-p);
+          border:1px solid  var(--tp-common-white);border-radius: 4px; font-weight: var(--tp-fw-medium);
         }
       }
     }
@@ -129,6 +131,7 @@
   z-index: 99;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   background: var(--tp-common-white);
+  background-image: linear-gradient(to right top,#02a7da,#00a7cd,#00a6bf,#00a4af,#00a29e,#00a294,#00a288,#16a27b,#1ca571,#28a865,#37aa58,#46ac48);;
   & .tp-bt-btn {
     box-shadow: rgba(100, 100, 111, 0.1) 1px 5px 20px 1px;
   }

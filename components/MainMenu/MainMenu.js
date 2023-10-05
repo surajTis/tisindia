@@ -1,15 +1,19 @@
+
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/img/logo/sticky-logo-white-01.svg";
-
+import useSticky from "hooks/use-sticky";
 export const MainMenu = ({
   items,
   callToActionLabel,
   callToActionDestination,
 }) => {
+
+  const { sticky } = useSticky();
+  
   return (
     <>
-      <header className="header">
+      <header className={`header ${sticky ? "header-sticky" : ""}`}>
         <div className="container">
           <div className="header-row">
             <div className="logo">
@@ -26,7 +30,7 @@ export const MainMenu = ({
               <div className="main-menu">
                 <ul>
                   {(items || []).map((item) => (
-                    <li key={item.id}>
+                    <li key={item.id} className={item.submenu ? styles.submenuItem : ''}>
                       <Link href={item.destination}>
                         <a>{item.label}</a>
                       </Link>
@@ -60,6 +64,7 @@ export const MainMenu = ({
             </div>
           </div>
         </div>
+        
       </header>
     </>
   );

@@ -24,7 +24,6 @@ export const Page = (props) => {
         callToActionDestination={props.callToActionDestination}
         callToActionLabel={props.callToActionLabel}
       />
-      
       <BlockRenderer blocks={props.blockContent} />
       <HomeAbout />
       <BlogInsight />
