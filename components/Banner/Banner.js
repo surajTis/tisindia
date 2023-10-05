@@ -2,7 +2,9 @@ import parse from "html-react-parser";
 import Image from "next/image";
 import Link from "next/link";
 import banner from "../../public/assets/img/banner/hero-home-right.png";
-export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
+import { ThreeDots } from "react-loader-spinner";
+
+export const Banner = ({ bannerTitle,bannerImage, bannerContent, bannerCta }) => {
   return (
     <>
       <div className="banner">
@@ -30,14 +32,27 @@ export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
                   #CMS
                 </Link>
               </p>
-                <button className="lets-talk">Let&apos;s start a project</button>
+              <button className="lets-talk">Let&apos;s start a project</button>
             </div>
             <div className="col-lg-6">
-              <Image src={banner} alt="images"></Image>
+              {banner ? (
+                <Image src={banner} alt="images"></Image>
+              ) : (
+                <ThreeDots
+                  height="80"
+                  width="80"
+                  radius="9"
+                  color="#fff"
+                  ariaLabel="three-dots-loading"
+                  wrapperStyle={{}}
+                  wrapperClassName=""
+                  visible={true}
+                />
+              )}
             </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
