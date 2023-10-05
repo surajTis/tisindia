@@ -1,3 +1,4 @@
+@forward "../css/bootstrap.min.css";
 @forward "../css/flaticon.css";
 @forward "../css/font-awesome-pro.css";
 @forward "../css/animate.css";
@@ -18,6 +19,7 @@
 @forward "layout/header";
 @forward "layout/meanmenu";
 @forward "layout/banner";
+@forward "layout/home";
 @forward "layout/slider";
 @forward "layout/services";
 @forward "layout/about";

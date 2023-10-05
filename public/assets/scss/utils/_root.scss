@@ -11,7 +11,26 @@
         }
     }
 
+     /**
+    @font Size declaration
+    */
+    @each $fz, $shades in $font-size {
+        @each $shade, $value in $shades {
+            --tp-#{$fz}-#{$shade}: #{$value};
+        }
+    }
+
     /**
+     @font Weight declaration
+    */
+    @each $fw, $shades in $font-scale{
+        @each $shade, $value in $shades {
+            --tp-#{$fw}-#{$shade}: #{$value};
+        }
+    }
+
+    /**
+    
     @color declaration
     */
     @each $color, $shades in $colors {
