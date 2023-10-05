@@ -34,10 +34,10 @@ export const HomeAbout = () => {
                     </div>
                     <div className="col-md-6 w-60">
                       <div className="about-home-content">
-                        <h5>
+                        <h3>
                           The Most Trusted Website Design & Development, Digital
                           Marketing & Salesforce Consulting Partner in India
-                        </h5>
+                        </h3>
                         <p>
                           We are a Digital Agency that specializes in website
                           design & development, digital marketing, marketing
@@ -70,10 +70,10 @@ export const HomeAbout = () => {
                     </div>
                     <div className="col-md-6 w-60">
                       <div className="about-home-content">
-                        <h5>
+                        <h3>
                           Creative Website Design & Website Development Company
                           in India
-                        </h5>
+                        </h3>
                         <p>
                           Our team understands the complexities involved in
                           providing website design and development and marketing
@@ -104,7 +104,7 @@ export const HomeAbout = () => {
                     </div>
                     <div className="col-md-6 w-60">
                       <div className="about-home-content">
-                        <h5>The Assets that keep us going</h5>
+                        <h3>The Assets that keep us going</h3>
                         <p>
                           Who we associate with says a lot about us and our
                           clientele would give you a sneak-peek at our
@@ -138,10 +138,10 @@ export const HomeAbout = () => {
                     </div>
                     <div className="col-md-6 w-60">
                       <div className="about-home-content">
-                        <h5>
+                        <h3>
                           Get a 360º Website Design and Development & Marketing
                           Services
-                        </h5>
+                        </h3>
                         <p>
                           Whether you want a custom website design &
                           development, support & maintenance, or digital
