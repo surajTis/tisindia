@@ -9,15 +9,15 @@ import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export const CaseStudy = () => {
+export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
   const settings = {
     centerMode: true,
-    draggable:true,
-    centerPadding:'0px',
-    autoplay:true,
+    draggable: true,
+    centerPadding: "0px",
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768, // Adjust the breakpoint to your needs
@@ -34,13 +34,16 @@ export const CaseStudy = () => {
     ],
   };
 
+  console.log(caseStudySlider)
+
   return (
     <>
       <section className="case-studay-outer">
         <div className="container">
           <div className="case-studay-main">
-            <h2>Case Studies</h2>
-            <Slider className="case-study-one"
+            <h2>{caseStudyTitle}</h2>
+            <Slider
+              className="case-study-one"
               {...settings}
               asNavFor={nav1}
               ref={(slider2) => setNav2(slider2)}
@@ -48,30 +51,31 @@ export const CaseStudy = () => {
               swipeToSlide={true}
               focusOnSelect={true}
             >
-              <div>
-                <Image src={slider1} alt="Picture of the author" />
-              </div>
-              <div>
-                <Image src={slider1} alt="Picture of the author" />
-              </div>
-              <div>
-                <Image src={slider1} alt="Picture of the author" />
-              </div>
-              <div>
-                <Image src={slider1} alt="Picture of the author" />
-              </div>
-              <div>
-                <Image src={slider1} alt="Picture of the author" />
-              </div>
-              <div>
-                <Image src={slider1} alt="Picture of the author" />
-              </div>
+              {(caseStudySlider || []).map((data, key) => (
+                <div key={key}>
+                  <Image src={data.caseStudySlideNavigationImage.guid} width={120} height={70} alt={data.caseStudySlideNavigationImage.alt} />
+                </div>
+              ))}
+             
             </Slider>
-            <Slider className="case-study-two" asNavFor={nav2} autoplay={true} ref={(slider1) => setNav1(slider1)}>
+            <Slider
+              className="case-study-two"
+              asNavFor={nav2}
+              autoplay={true}
+              ref={(slider1) => setNav1(slider1)}
+            >
               <div className="case-slide">
                 <div className="case-slide-bx-left">
-                   <h3> <Image src={hightlightpoint} alt="Picture of the author"  width={60}
-                  height={60} /> Petsword</h3>
+                  <h3>
+                    {" "}
+                    <Image
+                      src={hightlightpoint}
+                      alt="Picture of the author"
+                      width={60}
+                      height={60}
+                    />{" "}
+                    Petsword
+                  </h3>
                   <ul>
                     <li>
                       <Link href="/">ecommerce website</Link>
@@ -91,8 +95,16 @@ export const CaseStudy = () => {
               </div>
               <div className="case-slide">
                 <div className="case-slide-bx-left">
-                 <h3> <Image src={hightlightpoint} alt="Picture of the author"  width={60}
-                  height={60} /> Petsword</h3>
+                  <h3>
+                    {" "}
+                    <Image
+                      src={hightlightpoint}
+                      alt="Picture of the author"
+                      width={60}
+                      height={60}
+                    />{" "}
+                    Petsword
+                  </h3>
                   <ul>
                     <li>
                       <Link href="/">eCOMMERCE WEBSITE</Link>
@@ -112,8 +124,16 @@ export const CaseStudy = () => {
               </div>
               <div className="case-slide">
                 <div className="case-slide-bx-left">
-                  <h3> <Image src={hightlightpoint} alt="Picture of the author"  width={60}
-                  height={60} /> Petsword</h3>
+                  <h3>
+                    {" "}
+                    <Image
+                      src={hightlightpoint}
+                      alt="Picture of the author"
+                      width={60}
+                      height={60}
+                    />{" "}
+                    Petsword
+                  </h3>
                   <ul>
                     <li>
                       <Link href="/">eCOMMERCE WEBSITE</Link>
@@ -133,8 +153,16 @@ export const CaseStudy = () => {
               </div>
               <div className="case-slide">
                 <div className="case-slide-bx-left">
-                  <h3> <Image src={hightlightpoint} alt="Picture of the author"  width={60}
-                  height={60} /> Petsword</h3>
+                  <h3>
+                    {" "}
+                    <Image
+                      src={hightlightpoint}
+                      alt="Picture of the author"
+                      width={60}
+                      height={60}
+                    />{" "}
+                    Petsword
+                  </h3>
                   <ul>
                     <li>
                       <Link href="/">eCOMMERCE WEBSITE</Link>
@@ -154,8 +182,16 @@ export const CaseStudy = () => {
               </div>
               <div className="case-slide">
                 <div className="case-slide-bx-left">
-                  <h3> <Image src={hightlightpoint} alt="Picture of the author"  width={60}
-                  height={60} /> Petsword</h3>
+                  <h3>
+                    {" "}
+                    <Image
+                      src={hightlightpoint}
+                      alt="Picture of the author"
+                      width={60}
+                      height={60}
+                    />{" "}
+                    Petsword
+                  </h3>
                   <ul>
                     <li>
                       <Link href="/">eCOMMERCE WEBSITE</Link>
@@ -175,8 +211,16 @@ export const CaseStudy = () => {
               </div>
               <div className="case-slide">
                 <div className="case-slide-bx-left">
-                  <h3> <Image src={hightlightpoint} alt="Picture of the author"  width={60}
-                  height={60} /> Petsword</h3>
+                  <h3>
+                    {" "}
+                    <Image
+                      src={hightlightpoint}
+                      alt="Picture of the author"
+                      width={60}
+                      height={60}
+                    />{" "}
+                    Petsword
+                  </h3>
                   <ul>
                     <li>
                       <Link href="/">eCOMMERCE WEBSITE</Link>
