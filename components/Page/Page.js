@@ -1,4 +1,5 @@
 import { BlockRenderer } from "components/BlockRenderer";
+import { CaseStudy } from "components/CaseStudy";
 import { PageWrapper } from "context/page";
 import Head from "next/head";
 import { MainMenu } from "components/MainMenu";
@@ -24,6 +25,7 @@ export const Page = (props) => {
         callToActionLabel={props.callToActionLabel}
       />
       <BlockRenderer blocks={props.blockContent} />
+      <CaseStudy />
       <BlogInsight />
       <Footer items={props.footerMenuItems}/>
     </PageWrapper>
