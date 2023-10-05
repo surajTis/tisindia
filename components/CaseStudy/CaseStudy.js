@@ -20,13 +20,13 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
     autoplay: true,
     responsive: [
       {
-        breakpoint: 768, // Adjust the breakpoint to your needs
+        breakpoint: 768, 
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480, // Adjust the breakpoint to your needs
+        breakpoint: 480, 
         settings: {
           slidesToShow: 1,
         },

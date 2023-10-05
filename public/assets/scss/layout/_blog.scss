@@ -11,7 +11,7 @@
       font-weight: var(--tp-fw-bold);
     }
     p{
-      font-size: var(--tp-fz-h4);
+      font-size: calc(var(--tp-fz-h4) - 2px );
       color: #6d6685;
       font-weight: var(--tp-fw-light);
     }
@@ -19,6 +19,7 @@
   .bloginsight-inner {
     display: flex;
     padding: 1rem 0rem 2rem 0rem;
+    margin-top: 30px;
 
     .bloginsight {
       padding: 0px 18px 0px 0px;
