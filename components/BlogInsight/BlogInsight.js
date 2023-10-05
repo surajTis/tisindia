@@ -14,7 +14,7 @@ const Blog = [
     src: Opticle,
     discription:
       "Location Page SEO: Concept of Optimizing Local Pages for Search Engine Visibility",
-  },
+  }
   
 ];
 export const BlogInsight = ({ bannerTitle, bannerContent, bannerCta }) => {
