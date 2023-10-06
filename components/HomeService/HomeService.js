@@ -1,46 +1,50 @@
 import Image from "next/image";
 import Vicon from "../../public/assets/img/about/icon-vue-light.svg";
 import Link from "next/link";
-export const HomeService = () => {
+export const HomeService = ({
+  servicesBlockTitle,
+  servicesBlockSubtitle,
+  serviceBlocks,
+}) => {
   return (
     <>
       <div className="homeservice-outer">
         <div className="container">
-          <h2>Service</h2>
-          <p>
-            Clients Vision, Our Creations: Bespoke Software Products Showcase
-          </p>
+          <h2>{servicesBlockTitle}</h2>
+          <p>{servicesBlockSubtitle}</p>
           <div className="row">
-            <div className="homeservice-inner">
-              <div className="col-md-12">
-                <div className="service-half">
-                  <div className="service-full card-left">
-                    <div className="card-content">
-                      <div className="img-icon">
-                        <Image src={Vicon} />
+            {(serviceBlocks || []).map((data, key) => (
+              <>
+                <div className={`col-md-${key == 0 ? "12" : "6"}`}>
+                  <div className="service-half">
+                    <div className="service-full card-left">
+                      <div className="card-content">
+                        <div className="img-icon">
+                          <Image
+                            src={data.serviceBlockImage.guid}
+                            width={42}
+                            height={36}
+                            alt={data.serviceBlockImage.alt}
+                          ></Image>
+                        </div>
+                        <span>{data.serviceBlockSubtitle}</span>
+                        <h6>{data.serviceBlockTitle}</h6>
+                        <p>{data.serviceBlockContent}</p>
+                        {(data.serviceBlockButtons || []).map((btnData, key) => (
+                          <>
+                            <Link href={btnData.serviceBlockButtonLink}>
+                              <a className="homebtn1">{btnData.serviceBlockButtonText}</a>
+                            </Link>
+                          </>
+                        ))}
                       </div>
-                      <span>SERVICES</span>
-                      <h6>Digital Marketing</h6>
-                      <p>
-                        Get comprehensive solutions and expert guidance on
-                        Search Engine Optimization, PPC Campaigns, Social Media,
-                        Online Reputation, and other digital marketing campaigns
-                        based on your business objectives. We are one of the
-                        best digital marketing companies in India offering
-                        result-oriented digital marketing services to
-                        effectively promote your products and services on
-                        various digital platforms.
-                      </p>
-                      <Link href="/"><a className="homebtn1">Digital Marketing</a></Link>
-                      <button className="homebtn1">SEO</button>
-                      <button className="homebtn1">PPC</button>
-                      <button className="homebtn1">Social Media</button>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-md-6">
+              </>
+            ))}
+
+            {/* <div className="col-md-6">
               <div className="service-half">
                 <div className="card-left">
                   <div className="card-content">
@@ -90,7 +94,7 @@ export const HomeService = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

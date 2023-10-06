@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import parse from "html-react-parser";
+import ReactHtmlParser from 'react-html-parser';
 import Image from "next/image";
-import slider from "../../public/assets/img/slider/tis-portfolio-6.webp";
-import slider1 from "../../public/assets/img/slider/perts-world-thum.png";
 import hightlightpoint from "../../public/assets/img/shape/bulb-icon.png";
-import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -20,21 +17,19 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
     autoplay: true,
     responsive: [
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480, 
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
         },
       },
     ],
   };
-
-  console.log(caseStudySlider)
 
   return (
     <>
@@ -53,10 +48,14 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
             >
               {(caseStudySlider || []).map((data, key) => (
                 <div key={key}>
-                  <Image src={data.caseStudySlideNavigationImage.guid} width={120} height={70} alt={data.caseStudySlideNavigationImage.alt} />
+                  <Image
+                    src={data.caseStudySlideNavigationImage.guid}
+                    width={120}
+                    height={70}
+                    alt={data.caseStudySlideNavigationImage.alt}
+                  />
                 </div>
               ))}
-             
             </Slider>
             <Slider
               className="case-study-two"
@@ -64,180 +63,33 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
               autoplay={true}
               ref={(slider1) => setNav1(slider1)}
             >
-              <div className="case-slide">
-                <div className="case-slide-bx-left">
-                  <h3>
-                    {" "}
-                    <Image
-                      src={hightlightpoint}
-                      alt="Picture of the author"
-                      width={60}
-                      height={60}
-                    />{" "}
-                    Petsword
-                  </h3>
-                  <ul>
-                    <li>
-                      <Link href="/">ecommerce website</Link>
-                    </li>
-                    <li>
-                      <Link href="/">search engine optimization (seo)</Link>
-                    </li>
-                    <li>
-                      <Link href="/">paid campaigns (ppc)</Link>
-                    </li>
-                    <li>social media management</li>
-                  </ul>
-                </div>
-                <div className="case-slide-bx-right">
-                  <Image src={slider} alt="Picture of the author" />
-                </div>
-              </div>
-              <div className="case-slide">
-                <div className="case-slide-bx-left">
-                  <h3>
-                    {" "}
-                    <Image
-                      src={hightlightpoint}
-                      alt="Picture of the author"
-                      width={60}
-                      height={60}
-                    />{" "}
-                    Petsword
-                  </h3>
-                  <ul>
-                    <li>
-                      <Link href="/">eCOMMERCE WEBSITE</Link>
-                    </li>
-                    <li>
-                      <Link href="/">SEARCH ENGINE OPTIMIZATION (SEO)</Link>
-                    </li>
-                    <li>
-                      <Link href="/">PAID CAMPAIGNS (PPC)</Link>
-                    </li>
-                    <li>SOCIAL MEDIA MANAGEMENT</li>
-                  </ul>
-                </div>
-                <div className="case-slide-bx-right">
-                  <Image src={slider} alt="Picture of the author" />
-                </div>
-              </div>
-              <div className="case-slide">
-                <div className="case-slide-bx-left">
-                  <h3>
-                    {" "}
-                    <Image
-                      src={hightlightpoint}
-                      alt="Picture of the author"
-                      width={60}
-                      height={60}
-                    />{" "}
-                    Petsword
-                  </h3>
-                  <ul>
-                    <li>
-                      <Link href="/">eCOMMERCE WEBSITE</Link>
-                    </li>
-                    <li>
-                      <Link href="/">SEARCH ENGINE OPTIMIZATION (SEO)</Link>
-                    </li>
-                    <li>
-                      <Link href="/">PAID CAMPAIGNS (PPC)</Link>
-                    </li>
-                    <li>SOCIAL MEDIA MANAGEMENT</li>
-                  </ul>
-                </div>
-                <div className="case-slide-bx-right">
-                  <Image src={slider} alt="Picture of the author" />
-                </div>
-              </div>
-              <div className="case-slide">
-                <div className="case-slide-bx-left">
-                  <h3>
-                    {" "}
-                    <Image
-                      src={hightlightpoint}
-                      alt="Picture of the author"
-                      width={60}
-                      height={60}
-                    />{" "}
-                    Petsword
-                  </h3>
-                  <ul>
-                    <li>
-                      <Link href="/">eCOMMERCE WEBSITE</Link>
-                    </li>
-                    <li>
-                      <Link href="/">SEARCH ENGINE OPTIMIZATION (SEO)</Link>
-                    </li>
-                    <li>
-                      <Link href="/">PAID CAMPAIGNS (PPC)</Link>
-                    </li>
-                    <li>SOCIAL MEDIA MANAGEMENT</li>
-                  </ul>
-                </div>
-                <div className="case-slide-bx-right">
-                  <Image src={slider} alt="Picture of the author" />
-                </div>
-              </div>
-              <div className="case-slide">
-                <div className="case-slide-bx-left">
-                  <h3>
-                    {" "}
-                    <Image
-                      src={hightlightpoint}
-                      alt="Picture of the author"
-                      width={60}
-                      height={60}
-                    />{" "}
-                    Petsword
-                  </h3>
-                  <ul>
-                    <li>
-                      <Link href="/">eCOMMERCE WEBSITE</Link>
-                    </li>
-                    <li>
-                      <Link href="/">SEARCH ENGINE OPTIMIZATION (SEO)</Link>
-                    </li>
-                    <li>
-                      <Link href="/">PAID CAMPAIGNS (PPC)</Link>
-                    </li>
-                    <li>SOCIAL MEDIA MANAGEMENT</li>
-                  </ul>
-                </div>
-                <div className="case-slide-bx-right">
-                  <Image src={slider} alt="Picture of the author" />
-                </div>
-              </div>
-              <div className="case-slide">
-                <div className="case-slide-bx-left">
-                  <h3>
-                    {" "}
-                    <Image
-                      src={hightlightpoint}
-                      alt="Picture of the author"
-                      width={60}
-                      height={60}
-                    />{" "}
-                    Petsword
-                  </h3>
-                  <ul>
-                    <li>
-                      <Link href="/">eCOMMERCE WEBSITE</Link>
-                    </li>
-                    <li>
-                      <Link href="/">SEARCH ENGINE OPTIMIZATION (SEO)</Link>
-                    </li>
-                    <li>
-                      <Link href="/">PAID CAMPAIGNS (PPC)</Link>
-                    </li>
-                    <li>SOCIAL MEDIA MANAGEMENT</li>
-                  </ul>
-                </div>
-                <div className="case-slide-bx-right">
-                  <Image src={slider} alt="Picture of the author" />
-                </div>
-              </div>
+              {(caseStudySlider || []).map((data, key) => (
+                <>
+                  <div className="case-slide">
+                    <div className="case-slide-bx-left">
+                      <h3>
+                        {" "}
+                        <Image
+                          src={hightlightpoint}
+                          alt="Picture of the author"
+                          width={60}
+                          height={60}
+                        />{" "}
+                        {data.caseStudySlideTitle}
+                      </h3>
+                      {ReactHtmlParser(data.caseStudySlideContent)}
+                    </div>
+                    <div className="case-slide-bx-right">
+                      <Image
+                        src={data.caseStudySlideImage.guid}
+                        width={700}
+                        height={390}
+                        alt={data.caseStudySlideImage.alt}
+                      />
+                    </div>
+                  </div>
+                </>
+              ))}
             </Slider>
           </div>
         </div>
