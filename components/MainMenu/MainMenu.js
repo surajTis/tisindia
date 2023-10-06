@@ -13,16 +13,6 @@ export const MainMenu = ({
   
   return (
     <>
-<<<<<<< HEAD
-      <header className="header">
-        ram
-        demo
-        <ul>
-          {(items || []).map((item) => (
-            <li key={item.id}>
-              <Link href={item.destination}>
-                <a>{item.label}</a>
-=======
       <header className={`header ${sticky ? "header-sticky" : ""}`}>
         <div className="container">
           <div className="header-row">
@@ -34,7 +24,6 @@ export const MainMenu = ({
                   height={60}
                   alt="Picture of the author"
                 />
->>>>>>> 6247ac5da544dc1e99df82fea222d4099516c090
               </Link>
             </div>
             <div className="nav-area">
