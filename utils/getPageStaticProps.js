@@ -30,6 +30,40 @@ export const getPageStaticProps = async (context) => {
                     homeBannerContent
                   }
                 }
+                ... on Page_Maincontent_MainContent_CaseStudiesBlock {
+                  fieldGroupName
+                  caseStudiesBlockTitle
+                  caseStudiesSlider {
+                    caseStudySlideTitle
+                    caseStudySlideContent
+                    caseStudySlideImage {
+                      altText
+                      guid
+                    }
+                    caseStudySlideNavigationImage {
+                      altText
+                      guid
+                    }
+                  }
+                }
+                ... on Page_Maincontent_MainContent_ServicesBlock {
+                  fieldGroupName
+                  servicesBlockTitle
+                  servicesBlockSubtitle
+                  serviceBlocks {
+                    serviceBlockTitle
+                    serviceBlockSubtitle
+                    serviceBlockContent
+                    serviceBlockImage {
+                      altText
+                      guid
+                    }
+                    serviceBlockButtons {
+                      serviceBlockButtonText
+                      serviceBlockButtonLink
+                    }
+                  }
+                }
               }
             }
           }
