@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
+import ReactHtmlParser from 'react-html-parser';
 import Image from "next/image";
 import hightlightpoint from "../../public/assets/img/shape/bulb-icon.png";
 import "slick-carousel/slick/slick.css";
