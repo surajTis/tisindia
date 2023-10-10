@@ -18,6 +18,8 @@ export const CaseStudy = () => {
     draggable:true,
     centerPadding:'0px',
     autoplay:true,
+    cssEase: 'linear',
+    speed: 2000,
     responsive: [
       {
         breakpoint: 768, // Adjust the breakpoint to your needs
@@ -67,7 +69,7 @@ export const CaseStudy = () => {
                 <Image src={slider1} alt="Picture of the author" />
               </div>
             </Slider>
-            <Slider className="case-study-two" asNavFor={nav2} autoplay={true} ref={(slider1) => setNav1(slider1)}>
+            <Slider className="case-study-two" cssEase={'linear'} speed={2000}  asNavFor={nav2} autoplay={true} ref={(slider1) => setNav1(slider1)}>
               <div className="case-slide">
                 <div className="case-slide-bx-left">
                    <h3> <Image src={hightlightpoint} alt="Picture of the author"  width={60}
