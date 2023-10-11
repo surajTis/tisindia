@@ -9,7 +9,7 @@ import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export const CaseStudy = () => {
+export const CaseStudy = ({caseStudyBlockTitle,caseStudyBlockSlider}) => {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
@@ -39,7 +39,7 @@ export const CaseStudy = () => {
       <section className="case-studay-outer">
         <div className="container">
           <div className="case-studay-main">
-            <h2>Case Studies</h2>
+            <h2>{caseStudyBlockTitle}</h2>
             <Slider className="case-study-one"
               {...settings}
               asNavFor={nav1}

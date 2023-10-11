@@ -7,6 +7,7 @@ import { Footer } from "components/Footer";
 import { BlogInsight } from "components/BlogInsight";
 import { HomeAbout } from "components/HomeAbout/HomeAbout";
 import { HomeService } from "components/HomeService";
+import { Award } from "components/Award";
 export const Page = (props) => {
   console.log("PAGE PROPS: ", props);
   return (
@@ -27,8 +28,8 @@ export const Page = (props) => {
         callToActionLabel={props.callToActionLabel}
       />
       <BlockRenderer blocks={props.blockContent} />
+      <Award />
       <HomeService />
-      <CaseStudy />
       <HomeAbout />
       <BlogInsight />
       <Footer items={props.footerMenuItems}/>

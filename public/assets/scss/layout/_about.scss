@@ -77,3 +77,97 @@
     
   }
 }
+.Award-outer{
+  padding: 3rem;
+  background: aliceblue;
+
+  .awards-inner{
+    padding: 0px 0px 30px;
+    position: relative;
+    h2{
+      color: var(--tp-heading-primary);
+    font-weight: var(--tp-fw-bold);
+    font-size: var(--tp-fz-h2);
+    text-align: center;
+    margin-bottom: 30px;
+    }
+    .slick-slider{
+      position: initial;
+      .slick-list{
+        margin-left: -15px; margin-right: -15px; padding: 0px !important;
+      }
+      .slick-slide{
+        & > div{
+          margin: 8px 15px;
+          .award-slide{
+            padding: 10px;
+            box-shadow: 5px 10px 15px 0 rgba(0,0,0,.1);
+            background: #fff;
+            
+          }
+        }
+       
+      }
+    .slick-next{
+      top: 40px;
+      right: 0;
+      height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 23px;
+    border: 1px solid #000;
+    font-size: 22px;
+   
+      &::before{
+        color: #000;
+    content: "\f105";
+    font-family: "Font Awesome 6 Pro";
+    
+      }
+      &:hover{
+        border: 1px solid #1ca571;
+        background: linear-gradient(to right top, #02a7da, #00a7cd, #00a6bf, #00a4af, #00a29e, #00a294, #00a288, #16a27b, #1ca571, #28a865, #37aa58, #46ac48);
+
+        &:before{
+          color:#fff
+        }
+      }
+    }
+    .slick-prev{
+      right: 60px;
+      top: 40px;
+      left: auto;
+      height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 8px;
+    display: flex;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 23px;
+    font-size: 22px;
+    
+      &::before{
+        color: #000;
+    content: "\f104";
+    font-family: "Font Awesome 6 Pro";
+        
+      }
+      &:hover{
+        border: 1px solid #1ca571;
+        background: linear-gradient(to right top, #02a7da, #00a7cd, #00a6bf, #00a4af, #00a29e, #00a294, #00a288, #16a27b, #1ca571, #28a865, #37aa58, #46ac48);
+
+        &:before{
+          color:#fff
+        }
+      }
+
+    }
+  }
+  }
+}

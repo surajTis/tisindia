@@ -20,7 +20,7 @@ export const HomeService = () => {
                         <Image src={Vicon} />
                       </div>
                       <span>SERVICES</span>
-                      <h6>Digital Marketing</h6>
+                      <h3>Digital Marketing</h3>
                       <p>
                         Get comprehensive solutions and expert guidance on
                         Search Engine Optimization, PPC Campaigns, Social Media,
@@ -31,10 +31,10 @@ export const HomeService = () => {
                         effectively promote your products and services on
                         various digital platforms.
                       </p>
-                      <Link href="/"><a className="homebtn1">Digital Marketing</a></Link>
-                      <button className="homebtn1">SEO</button>
-                      <button className="homebtn1">PPC</button>
-                      <button className="homebtn1">Social Media</button>
+                      <Link href="/"><a className="home-service-btn">Digital Marketing</a></Link>
+                      <Link href="/"><a className="home-service-btn">SEO</a></Link>
+                      <Link href="/"><a className="home-service-btn">PPC</a></Link>
+                      <Link href="/"><a className="home-service-btn">Social Media</a></Link>
                     </div>
                   </div>
                 </div>
@@ -48,7 +48,7 @@ export const HomeService = () => {
                       <Image src={Vicon} />
                     </div>
                     <span>SERVICES</span>
-                    <h6>Website Design & Development</h6>
+                    <h3>Website Design & Development</h3>
                     <p>
                       Create fluid and mobile-first website with UX based
                       website design, development, and engaging content with the
@@ -58,8 +58,8 @@ export const HomeService = () => {
                       effectively with your target audience, strengthen your
                       brand and generate leads.
                     </p>
-                    <button className="homebtn1">Design</button>
-                    <button className="homebtn1">Development</button>
+                    <Link href="/"><a className="home-service-btn">Design</a></Link>
+                    <Link href="/"><a className="home-service-btn">Development</a></Link>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export const HomeService = () => {
                       <Image src={Vicon} />
                     </div>
                     <span>SERVICES</span>
-                    <h6>Salesforce Consulting</h6>
+                    <h3>Salesforce Consulting</h3>
                     <p>
                       We are a trusted Salesforce consulting partner, to
                       automate and improve organizational efficiency by
@@ -84,9 +84,7 @@ export const HomeService = () => {
                       Manufacturing, Telecommunications, Banking, Financial
                       Services, & Insurance, Verticals Industry .
                     </p>
-                    <button className="homebtn1">
-                      Salesforce Implementation
-                    </button>
+                    <Link href="/"><a className="home-service-btn">Salesforce Implementation</a></Link>
                   </div>
                 </div>
               </div>

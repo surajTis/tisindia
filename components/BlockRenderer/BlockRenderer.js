@@ -1,5 +1,6 @@
 
 import { Banner } from "components/Banner";
+import { CaseStudy } from "components/CaseStudy";
 export const BlockRenderer = ({ blocks }) => {
   return blocks.map((block, i) => {
 
@@ -15,6 +16,17 @@ export const BlockRenderer = ({ blocks }) => {
           />
         );
       }
+
+      case "Page_Maincontent_MainContent_CaseStudiesBlock": {
+        return (
+          <CaseStudy
+            key={i}
+            caseStudyBlockTitle={block.caseStudiesBlockTitle}
+            caseStudyBlockSlider={block.caseStudiesSlider}
+          />
+        );
+      }
+
 
       default: {
         console.log("UNKNOWN: ", block);
