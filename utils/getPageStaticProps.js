@@ -64,6 +64,18 @@ export const getPageStaticProps = async (context) => {
                     }
                   }
                 }
+                ... on Page_Maincontent_MainContent_SoftwareDevelopmentBlock {
+                  fieldGroupName
+                }
+                ... on Page_Maincontent_MainContent_AwardsSection {
+                  fieldGroupName
+                }
+                ... on Page_Maincontent_MainContent_AboutSection {
+                  fieldGroupName
+                }
+                ... on Page_Maincontent_MainContent_BloginsightSection {
+                  fieldGroupName
+                }
               }
             }
           }

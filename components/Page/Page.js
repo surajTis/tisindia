@@ -30,10 +30,6 @@ export const Page = (props) => {
       />
        
       <BlockRenderer blocks={props.blockContent} />
-      <DevelopmentServices />
-      <Award />
-      <HomeAbout />
-      <BlogInsight />
       <Footer items={props.footerMenuItems}/>
     </PageWrapper>
   );
