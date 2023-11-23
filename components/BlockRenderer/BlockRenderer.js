@@ -4,7 +4,6 @@ import { CaseStudy } from "components/CaseStudy";
 import { HomeService } from "components/HomeService";
 export const BlockRenderer = ({ blocks }) => {
   return blocks.map((block, i) => {
-
     switch (block.fieldGroupName) {
       case "Page_Maincontent_MainContent_HomeBanner": {
         return (
