@@ -97,6 +97,11 @@ export const HomeService = ({
             </div> */}
           </div>
         </div>
+        <div className="shape1"></div>
+        <div className="shape6"><i class="fa-light fa-triangle"></i></div>
+        <div className="shape7"><i class="fa-solid fa-xmark"></i></div>
+        <div className="shape8"><i class="fa-light fa-triangle"></i></div>
+        <div className="shape9"><i class="fa-light fa-triangle"></i></div>
       </div>
     </>
   );
