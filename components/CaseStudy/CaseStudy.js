@@ -51,7 +51,7 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
                 <div key={key}>
                   <Image
                     src={data.caseStudySlideNavigationImage.guid}
-                    width={120}
+                    width={100}
                     height={70}
                     alt={data.caseStudySlideNavigationImage.alt}
                   />
