@@ -43,14 +43,14 @@ export const DevelopmentServices = () => {
                                         <div className="services-dv-bx">
                                             <ul>
                                                 <li>
-                                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on top">
+                                                    <a href="#">
                                                         <span className="servic-ico">
                                                            
                                                             <Image src={icon2} alt="Picture of the author" />
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -59,7 +59,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -68,7 +68,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -85,7 +85,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -94,7 +94,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -103,7 +103,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -122,7 +122,7 @@ export const DevelopmentServices = () => {
                                                         
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -131,7 +131,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -140,7 +140,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -159,7 +159,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -168,7 +168,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -177,7 +177,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Laravel</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -218,7 +218,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Swift</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -236,7 +236,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Dart</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -245,7 +245,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Kotlin</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -266,7 +266,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Dart</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                                 <li>
                                                     <a href="#">
@@ -275,7 +275,7 @@ export const DevelopmentServices = () => {
                                                         </span>
                                                         <span>Kotlin</span>
                                                     </a>
-                                                    <div class="tooltip-content"><div class="card"><div class="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
                                                 </li>
                                             </ul>
                                         </div>
