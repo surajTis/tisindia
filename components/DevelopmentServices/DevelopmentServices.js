@@ -70,7 +70,7 @@ export const DevelopmentServices = () => {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <p class="has-text-vertical">BACKEND</p>
+                                        <p className="has-text-vertical">BACKEND</p>
                                     </div>
                                     <div className="services-listing-dv">
                                         <div className="services-dv-bx">
@@ -105,7 +105,7 @@ export const DevelopmentServices = () => {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <p class="has-text-vertical">FRONTEND</p>
+                                        <p className="has-text-vertical">FRONTEND</p>
                                     </div>
                                     <div className="services-listing-dv">
                                         <div className="services-dv-bx">
@@ -142,7 +142,7 @@ export const DevelopmentServices = () => {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <p class="has-text-vertical">DATABASE</p>
+                                        <p className="has-text-vertical">DATABASE</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 is-relative">
@@ -203,7 +203,7 @@ export const DevelopmentServices = () => {
                                 <h6>Tech Stack</h6>
                             </div>
                             <div className="services-devlopemnt-box2">
-                                <div class="has-dashed-border border-6"></div>
+                                <div className="has-dashed-border border-6"></div>
                                 <div className="col-lg-6 is-relative">
                                     <h6>APPS</h6>
                                     <div className="services-listing-dv">
