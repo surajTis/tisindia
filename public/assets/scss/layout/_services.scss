@@ -1,7 +1,7 @@
 @use "../utils" as *;
 
 .homeservice-outer {
-  padding: 3rem;
+  padding: 3rem 0rem; position: relative;
   h2 {
     color: var(--tp-heading-primary);
     font-weight: var(--tp-fw-bold);
@@ -41,11 +41,13 @@
       }
       p {
         text-align: left;
-        margin-top: 30px;
-        margin-bottom: 20px;
+        
+        margin-bottom: 30px;
+        line-height: 25px;
       }
-      h6 {
-        font-size: var(--tp-fz-h6);
+      h3 {
+        font-size: var(--tp-fz-h3);
+        margin-bottom: 40px;
         position: relative;
         &:after {
           content: "";
@@ -107,7 +109,7 @@
           #46ac48
         );
       }
-      .homebtn1 {
+      .home-service-btn {
         color: #171150;
         border: 1px solid #171150;
         margin-right: 10px;
