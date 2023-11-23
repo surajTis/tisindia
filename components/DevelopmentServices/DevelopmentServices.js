@@ -1,6 +1,4 @@
 import React  from "react";
-import Slider from "react-slick";
-import parse from "html-react-parser";
 import Image from "next/image";
 import icon1 from "../../public/assets/img/icon/icon-arrow-down.png";
 import icon2 from "../../public/assets/img/icon/icon-laravel.png";
