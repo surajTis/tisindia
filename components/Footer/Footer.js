@@ -98,15 +98,7 @@ export const Footer = ({ items }) => {
           <div className="container">
           <div className="inner-section">
             <p>
-              <strong>WebReinvent</strong> a software development company that provides a range
-              of end-to-end software product development services. We have
-              delivered MVP, multi-tenant SaaS, enterprise-level web
-              applications from startup to MSME. We are one of the most
-              process-driven companies and we love to follow the industry
-              standards. Some of them are managing git repo, code review,
-              release deployments via CI/CD, automated software testing,
-              maintaining detailed technical documentation, application
-              performance monitoring, etc. |
+              <strong>TIS INDIA</strong> TIS is a result-driven digital marketing agency dedicated to helping businesses thrive in the ever-evolving online world. 
             </p>
           </div>
           </div>
