@@ -8,6 +8,9 @@
     font-size: var(--tp-fz-h2);
     text-align: center;
     position: relative;
+    @media #{$xs}{
+      font-size: var(--tp-fz-h6);
+    }
   }
   p {
     text-align: center;
@@ -138,6 +141,11 @@
             #46ac48
           );
         }
+
+        @media #{$lg,$md,$xs,$sm}{
+          margin-bottom: 15px;
+        }
+        
       }
     }
     .pl-0 {

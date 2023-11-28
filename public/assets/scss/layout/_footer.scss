@@ -20,6 +20,11 @@
         a {
           font-size: var(--tp-fz-a);
           color: hsla(0, 0%, 100%, 0.85);
+
+          &:hover,
+          &.active {
+            color: var(--tp-text-body);
+          }
         }
       }
     }

@@ -1,8 +1,12 @@
-
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/img/logo/sticky-logo-white-01.svg";
 import useSticky from "hooks/use-sticky";
+import Sidebar from "../../common/sidebar";
+
+
+
 export const MainMenu = ({
   items,
   callToActionLabel,
@@ -10,6 +14,25 @@ export const MainMenu = ({
 }) => {
 
   const { sticky } = useSticky();
+
+  // const [open, setOpen] = useState(false);
+
+  //   const ToggleSidebar = () => {
+  //     open === true ? setOpen(false) : setOpen(true);
+  //   }
+  //   const ref = useRef();
+
+  //   useEffect(() => {
+  //     const handleClickOutside = (event) => {
+  //       if (!ref.current.contains(event.target)) {
+  //         setOpen(false);
+  //       }
+  //     };
+  //     document.addEventListener("mousedown", handleClickOutside);
+  //   }, [ref]);
+
+  const [isActive, setIsActive] = useState(false);
+   
   
   return (
     <>
@@ -26,7 +49,14 @@ export const MainMenu = ({
                 />
               </Link>
             </div>
-            <div className="nav-area">
+            <div className="navbar-toggler"   onClick={() => setIsActive(true)}>
+                <span className="hum-ico"></span>
+                <span className="hum-ico"></span>
+                <span className="hum-ico"></span>
+            </div>
+           
+
+            <div className={`nav-area`}>
               <div className="main-menu">
                 <ul>
                   {(items || []).map((item) => (
@@ -66,6 +96,7 @@ export const MainMenu = ({
         </div>
         
       </header>
+      <Sidebar isActive={isActive} setIsActive={setIsActive} />
     </>
   );
 };
