@@ -43,6 +43,13 @@ export const Banner = ({
             </div>
           </div>
         </div>
+        <span className="circle-banner-top"></span>
+        <span className="circle-banner-bottom"></span>
+        <div className="shape1"></div>
+        <div className="shape2"><i className="fa-light fa-triangle"></i></div>
+        <div className="shape3"><i className="fa-solid fa-xmark"></i></div>
+        <div className="shape4"><i className="fa-light fa-triangle"></i></div>
+        <div className="shape5"><i className="fa-light fa-triangle"></i></div>
       </div>
     </>
   );

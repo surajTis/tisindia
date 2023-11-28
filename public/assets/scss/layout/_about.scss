@@ -1,7 +1,7 @@
 @use "../utils" as *;
 .homeabout-outer {
   background: url(../../img/about/home-about-banner.png), linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd);
-  padding: 3rem;
+  padding: 3rem 0rem; position: relative;
   .homeabout-content {
     margin-bottom: 30px;
     h2 {
@@ -93,9 +93,9 @@
   }
 }
 .Award-outer{
-  padding: 3rem;
+  padding: 3rem 0rem;
   background: aliceblue;
-
+  position: relative;
   .awards-inner{
     padding: 0px 0px 30px;
     position: relative;
