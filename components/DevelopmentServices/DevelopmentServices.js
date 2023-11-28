@@ -35,153 +35,156 @@ export const DevelopmentServices = () => {
                                 <h6>Tech Stack</h6>
                             </div>
                             <div className="services-devlopemnt-box2">
-                                <div className="col-lg-6 is-relative">
-                                    <h6>APPS</h6>
-                                    <div className="services-listing-dv">
-                                        <div className="services-dv-bx">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                           
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                            </ul>
+                                <div className="service-main">
+                                    <div className="col-lg-6 is-relative">
+                                        <h6>APPS</h6>
+                                        <div className="services-listing-dv">
+                                            <div className="services-dv-bx">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                            
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p className="has-text-vertical">BACKEND</p>
                                         </div>
-                                        <p className="has-text-vertical">BACKEND</p>
+                                        <div className="services-listing-dv">
+                                            <div className="services-dv-bx">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                            
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p className="has-text-vertical">FRONTEND</p>
+                                        </div>
+                                        <div className="services-listing-dv">
+                                            <div className="services-dv-bx">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                            
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            
+                                                            
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p className="has-text-vertical">DATABASE</p>
+                                        </div>
                                     </div>
-                                    <div className="services-listing-dv">
-                                        <div className="services-dv-bx">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                           
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                            </ul>
+                                    <div className="col-lg-6 is-relative">
+                                        <h6>API</h6>
+                                        <div className="services-listing-dv">
+                                            <div className="services-dv-bx">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Laravel</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    
                                         </div>
-                                        <p className="has-text-vertical">FRONTEND</p>
-                                    </div>
-                                    <div className="services-listing-dv">
-                                        <div className="services-dv-bx">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                           
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        
-                                                        
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p className="has-text-vertical">DATABASE</p>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 is-relative">
-                                    <h6>API</h6>
-                                    <div className="services-listing-dv">
-                                        <div className="services-dv-bx">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Laravel</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                   
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                         <div className="col-lg-6 services-devlopment-bx-right">
@@ -204,50 +207,52 @@ export const DevelopmentServices = () => {
                             </div>
                             <div className="services-devlopemnt-box2">
                                 <div className="has-dashed-border border-6"></div>
-                                <div className="col-lg-6 is-relative">
-                                    <h6>APPS</h6>
-                                    <div className="services-listing-dv">
-                                        <div className="services-dv-bx">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Swift</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                            </ul>
+                                <div className="service-main">
+                                    <div className="col-lg-6 is-relative">
+                                        <h6>APPS</h6>
+                                        <div className="services-listing-dv">
+                                            <div className="services-dv-bx">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Swift</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-lg-6 is-relative">
-                                    <h6>iOS</h6>
-                                    <div className="services-listing-dv">
-                                        <div className="services-dv-bx">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Dart</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span className="servic-ico">
-                                                            <Image src={icon2} alt="Picture of the author" />
-                                                        </span>
-                                                        <span>Kotlin</span>
-                                                    </a>
-                                                    <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div className="col-lg-6 is-relative">
+                                        <h6>iOS</h6>
+                                        <div className="services-listing-dv">
+                                            <div className="services-dv-bx">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Dart</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span className="servic-ico">
+                                                                <Image src={icon2} alt="Picture of the author" />
+                                                            </span>
+                                                            <span>Kotlin</span>
+                                                        </a>
+                                                        <div className="tooltip-content"><div className="card"><div className="card-content"><p>Laravel is a web application framework for backend development.</p></div></div></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
