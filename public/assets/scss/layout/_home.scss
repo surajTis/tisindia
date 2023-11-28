@@ -1,8 +1,12 @@
+@use "../utils" as *;
 .case-studay-outer{ padding: 3rem 0; background: linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd); position: relative;
     .case-studay-main{
         h2{
             color: var(--tp-heading-primary); margin-bottom: 0.5rem;font-size:var(--tp-fz-h2); font-weight: var(--tp-fw-bold);
             margin-bottom: 30px;
+            @media #{$xs} {
+                font-size:var(--tp-fz-h3); 
+            }
         }
         .case-study-one{
             .slick-list{
@@ -494,3 +498,4 @@
         }
     }
 }
+

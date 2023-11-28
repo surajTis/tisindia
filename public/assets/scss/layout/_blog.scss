@@ -10,6 +10,9 @@
     h2{
       font-size: var(--tp-fz-h2);
       font-weight: var(--tp-fw-bold);
+      @media #{$xs}{
+        font-size: var(--tp-fz-h6);
+      }
     }
     p{
       font-size: calc(var(--tp-fz-h4) - 2px );

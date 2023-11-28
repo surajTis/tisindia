@@ -1,7 +1,15 @@
+<<<<<<< HEAD
+import React, { useState, useRef, useEffect } from "react";
+=======
+>>>>>>> b9249c0cd5494e10ce5549c6266f4ee439a37b2d
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/img/logo/sticky-logo-white-01.svg";
 import useSticky from "hooks/use-sticky";
+import Sidebar from "../../common/sidebar";
+
+
+
 export const MainMenu = ({
   items,
   callToActionLabel,
@@ -9,6 +17,28 @@ export const MainMenu = ({
 }) => {
   const { sticky } = useSticky();
 
+<<<<<<< HEAD
+  // const [open, setOpen] = useState(false);
+
+  //   const ToggleSidebar = () => {
+  //     open === true ? setOpen(false) : setOpen(true);
+  //   }
+  //   const ref = useRef();
+
+  //   useEffect(() => {
+  //     const handleClickOutside = (event) => {
+  //       if (!ref.current.contains(event.target)) {
+  //         setOpen(false);
+  //       }
+  //     };
+  //     document.addEventListener("mousedown", handleClickOutside);
+  //   }, [ref]);
+
+  const [isActive, setIsActive] = useState(false);
+   
+  
+=======
+>>>>>>> b9249c0cd5494e10ce5549c6266f4ee439a37b2d
   return (
     <>
       <header className={`header ${sticky ? "header-sticky" : ""}`}>
@@ -26,7 +56,14 @@ export const MainMenu = ({
                 </a>
               </Link>
             </div>
-            <div className="nav-area">
+            <div className="navbar-toggler"   onClick={() => setIsActive(true)}>
+                <span className="hum-ico"></span>
+                <span className="hum-ico"></span>
+                <span className="hum-ico"></span>
+            </div>
+           
+
+            <div className={`nav-area`}>
               <div className="main-menu">
                 <ul>
                   {(items || []).map((item) => (
@@ -68,6 +105,7 @@ export const MainMenu = ({
           </div>
         </div>
       </header>
+      <Sidebar isActive={isActive} setIsActive={setIsActive} />
     </>
   );
 };

@@ -283,7 +283,7 @@ a.meanmenu-reveal {
   width: 100%;
   padding: 10px 0;
   color: #fff;
-  border-top: 1px solid #3c3962;
+  border-top: 1px solid #ffffff;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 700;
@@ -295,7 +295,8 @@ a.meanmenu-reveal {
   margin-top: 8px;
   padding: 0 !important;
   line-height: 14px;
-  border: 1px solid #3c3962 !important;
+  border: 1px solid #fff!important;
+  transition: all .3s ease-out 0s!important;
   height: 26px;
   width: 26px;
   line-height: 26px;
@@ -321,7 +322,7 @@ a.meanmenu-reveal {
   border-top: 0;
 }
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked {
-  color: #10d0a1;
+  color: #ffffff;
 }
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked i {
   transform: rotate(45deg);
