@@ -2,7 +2,13 @@ import parse from "html-react-parser";
 import Image from "next/image";
 import Link from "next/link";
 import banner from "../../public/assets/img/banner/hero-home-right.png";
-export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
+
+export const Banner = ({
+  bannerTitle,
+  bannerImage,
+  bannerContent,
+  bannerCta,
+}) => {
   return (
     <>
       <div className="banner">
@@ -30,7 +36,7 @@ export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
                   #CMS
                 </Link>
               </p>
-                <button className="lets-talk">Let&apos;s start a project</button>
+              <button className="lets-talk">Let&apos;s start a project</button>
             </div>
             <div className="col-lg-6">
               <Image src={banner} alt="images"></Image>
@@ -40,4 +46,4 @@ export const Banner = ({ bannerTitle, bannerContent, bannerCta }) => {
       </div>
     </>
   );
-}
+};

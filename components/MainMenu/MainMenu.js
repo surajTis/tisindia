@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import React, { useState, useRef, useEffect } from "react";
+=======
+>>>>>>> b9249c0cd5494e10ce5549c6266f4ee439a37b2d
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/img/logo/sticky-logo-white-01.svg";
@@ -12,9 +15,9 @@ export const MainMenu = ({
   callToActionLabel,
   callToActionDestination,
 }) => {
-
   const { sticky } = useSticky();
 
+<<<<<<< HEAD
   // const [open, setOpen] = useState(false);
 
   //   const ToggleSidebar = () => {
@@ -34,19 +37,23 @@ export const MainMenu = ({
   const [isActive, setIsActive] = useState(false);
    
   
+=======
+>>>>>>> b9249c0cd5494e10ce5549c6266f4ee439a37b2d
   return (
     <>
       <header className={`header ${sticky ? "header-sticky" : ""}`}>
         <div className="container">
           <div className="header-row">
             <div className="logo">
-              <Link href="#">
-                <Image
-                  src={Logo}
-                  width={160}
-                  height={60}
-                  alt="Picture of the author"
-                />
+              <Link href="/">
+                <a>
+                  <Image
+                    src={Logo}
+                    width={160}
+                    height={60}
+                    alt="Picture of the author"
+                  />
+                </a>
               </Link>
             </div>
             <div className="navbar-toggler"   onClick={() => setIsActive(true)}>
@@ -60,7 +67,10 @@ export const MainMenu = ({
               <div className="main-menu">
                 <ul>
                   {(items || []).map((item) => (
-                    <li key={item.id} className={item.submenu ? styles.submenuItem : ''}>
+                    <li
+                      key={item.id}
+                      className={item.submenu ? styles.submenuItem : ""}
+                    >
                       <Link href={item.destination}>
                         <a>{item.label}</a>
                       </Link>
@@ -94,7 +104,6 @@ export const MainMenu = ({
             </div>
           </div>
         </div>
-        
       </header>
       <Sidebar isActive={isActive} setIsActive={setIsActive} />
     </>

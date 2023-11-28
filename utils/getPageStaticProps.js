@@ -30,7 +30,6 @@ export const getPageStaticProps = async (context) => {
                     homeBannerContent
                   }
                 }
-
                 ... on Page_Maincontent_MainContent_CaseStudiesBlock {
                   fieldGroupName
                   caseStudiesBlockTitle
@@ -47,7 +46,24 @@ export const getPageStaticProps = async (context) => {
                     }
                   }
                 }
-
+                ... on Page_Maincontent_MainContent_ServicesBlock {
+                  fieldGroupName
+                  servicesBlockTitle
+                  servicesBlockSubtitle
+                  serviceBlocks {
+                    serviceBlockTitle
+                    serviceBlockSubtitle
+                    serviceBlockContent
+                    serviceBlockImage {
+                      altText
+                      guid
+                    }
+                    serviceBlockButtons {
+                      serviceBlockButtonText
+                      serviceBlockButtonLink
+                    }
+                  }
+                }
               }
             }
           }

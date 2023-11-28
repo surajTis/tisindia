@@ -1,9 +1,9 @@
 
 import { Banner } from "components/Banner";
 import { CaseStudy } from "components/CaseStudy";
+import { HomeService } from "components/HomeService";
 export const BlockRenderer = ({ blocks }) => {
   return blocks.map((block, i) => {
-
     switch (block.fieldGroupName) {
       case "Page_Maincontent_MainContent_HomeBanner": {
         return (
@@ -21,12 +21,22 @@ export const BlockRenderer = ({ blocks }) => {
         return (
           <CaseStudy
             key={i}
-            caseStudyBlockTitle={block.caseStudiesBlockTitle}
-            caseStudyBlockSlider={block.caseStudiesSlider}
+            caseStudyTitle={block.caseStudiesBlockTitle}
+            caseStudySlider={block.caseStudiesSlider}
           />
         );
       }
 
+      case "Page_Maincontent_MainContent_ServicesBlock": {
+        return (
+          <HomeService
+            key={i}
+            servicesBlockTitle={block.servicesBlockTitle}
+            servicesBlockSubtitle={block.servicesBlockSubtitle}
+            serviceBlocks={block.serviceBlocks}
+          />
+        );
+      }
 
       default: {
         console.log("UNKNOWN: ", block);

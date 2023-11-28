@@ -14,10 +14,23 @@
             }
             .slick-slide{
                 & > div {background-color: var(--tp-common-white); margin: 8px 15px; text-align: center; padding: 10px 8px;
-                    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.07); border:1px solid #e1e1e1; border-radius: 4px;}
+                    // border:1px solid #e1e1e1; 
+                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+                    position: relative;
+                    &::after{
+                        position: absolute; width: 0px; height: 3px; background: #00a28b; content: ''; left: 0; bottom: 0;
+                        transition: all 0.5s;
+                    }
+                }
             }
             .slick-slide.slick-center.slick-current{ 
-                & > div{border-color: #00a28b;box-shadow: 0px 0px 10px 0px rgba(0, 162, 139, 0.3);}
+                & > div{
+                    //  border-color: #00a28b;
+                    //  box-shadow: 0px 0px 10px 0px rgba(0, 162, 139, 0.3);
+                     &::after{
+                        width: 100%;
+                     }
+                    }
             }
         }
         .case-study-two{ padding: 40px 0px 30px;

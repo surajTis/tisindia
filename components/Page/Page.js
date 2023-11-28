@@ -29,7 +29,6 @@ export const Page = (props) => {
       />
       <BlockRenderer blocks={props.blockContent} />
       <Award />
-      <HomeService />
       <HomeAbout />
       <BlogInsight />
       <Footer items={props.footerMenuItems}/>
