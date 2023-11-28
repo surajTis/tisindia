@@ -1,3 +1,4 @@
+@use "../utils" as *;
 .shape1 {top: 20%; left: 30px; animation: rotate3d 4s linear infinite; opacity: .4; position: absolute; width: 55px; height: 55px;
     background-image: linear-gradient( 70deg,  hsl(41deg 93% 54%) 0%,  hsl(43deg 90% 52%) 0%, hsl(45deg 87% 51%) 1%, hsl(47deg 84% 50%) 5%,
       hsl(49deg 83% 50%) 17%, hsl(51deg 81% 49%) 82%, hsl(53deg 79% 49%) 93%, hsl(55deg 76% 48%) 97%,  hsl(58deg 73% 48%) 99%,
@@ -102,6 +103,13 @@
     top: 15%;
     i{
       color: #00a487; font-size: 30px;
+    }
+    @media #{$bxxl} {
+      right: 30px;
+    }
+    @media #{$xl2} {
+      right: 30px;
+      top:15px;
     }
   }
   .shape8{

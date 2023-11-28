@@ -14,7 +14,6 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
     centerMode: true,
     draggable:true,
     centerPadding:'0px',
-    autoplay:true,
     cssEase: 'linear',
     speed: 2000,
     responsive: [
@@ -27,7 +26,7 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
       {
         breakpoint: 480, // Adjust the breakpoint to your needs
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
@@ -58,7 +57,7 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
                 </div>
               ))}
             </Slider>
-            <Slider className="case-study-two" cssEase={'linear'} speed={2000}  asNavFor={nav2} autoplay={true} ref={(slider1) => setNav1(slider1)}>
+            <Slider className="case-study-two" cssEase={'linear'} speed={2000}  asNavFor={nav2}  ref={(slider1) => setNav1(slider1)}>
             {(caseStudySlider || []).map((data, key) => (
                 <>
                   <div className="case-slide">

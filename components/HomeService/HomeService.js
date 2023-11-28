@@ -28,12 +28,12 @@ export const HomeService = ({
                           ></Image>
                         </div>
                         <span>{data.serviceBlockSubtitle}</span>
-                        <h6>{data.serviceBlockTitle}</h6>
+                        <h4>{data.serviceBlockTitle}</h4>
                         <p>{data.serviceBlockContent}</p>
                         {(data.serviceBlockButtons || []).map((btnData, key) => (
                           <>
                             <Link href={btnData.serviceBlockButtonLink}>
-                              <a className="homebtn1">{btnData.serviceBlockButtonText}</a>
+                              <a className="home-service-btn">{btnData.serviceBlockButtonText}</a>
                             </Link>
                           </>
                         ))}

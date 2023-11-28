@@ -6,7 +6,7 @@
     justify-content: space-between;
     @media #{$xxl,$xl} {
     }
-    .logo{padding: .5rem 0rem; 
+    .logo{padding: .7rem 0rem; 
      
     }
   .nav-area{
@@ -116,9 +116,9 @@
           }
         }
       }
-      .contact-btn{
+      .contact-btn{ margin-left: 15px;
         & > a{
-           color: var(--tp-common-white);
+           background: var(--tp-common-white); color: var(--tp-theme-secondary);
           display: block;padding: 0.3rem 1.125rem;font-size: var(--tp-fz-p);
           border:1px solid  var(--tp-common-white);border-radius: 4px; font-weight: var(--tp-fw-medium);
           @media #{$xl2}{color: #000;}
@@ -147,16 +147,13 @@
       flex-wrap: wrap;
       position: absolute;
       top: 30px;
-      right: 120px;
+      right: 25px;
       border: none;
+      cursor: pointer;
+      height: 35px;
       @media #{$xl2}{
         display: block;
-        width: 40px;
-      flex-wrap: wrap;
-      position: absolute;
-      top: 30px;
-      right: 120px;
-      border: none;
+   
       }
         .hum-ico {
           display: block;
