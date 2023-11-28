@@ -1,4 +1,4 @@
-.case-studay-outer{ padding: 3rem 0; background: linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd);
+.case-studay-outer{ padding: 3rem 0; background: linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd); position: relative;
     .case-studay-main{
         h2{
             color: var(--tp-heading-primary); margin-bottom: 0.5rem;font-size:var(--tp-fz-h2); font-weight: var(--tp-fw-bold);
@@ -77,7 +77,7 @@
     }
 }
 
-.development-services-outer{background:linear-gradient(to left bottom, #fffcff, #fbfaff, #effbff, #e0fdff, #d5fefd); padding: 50px 0px;
+.development-services-outer{background:linear-gradient(to left bottom, #fffcff, #fbfaff, #effbff, #e0fdff, #d5fefd); padding: 50px 0px; position: relative;
     .head{
         text-align: center;
         h2{
