@@ -2,9 +2,10 @@
 
 .blog-insight-outer {
   background: #f1f1f2;
-  padding: 3rem;
+  padding: 3rem 0rem;
   display: block;
   overflow: hidden;
+  position: relative;
   .bloginsight-content{
     h2{
       font-size: var(--tp-fz-h2);

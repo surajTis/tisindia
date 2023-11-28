@@ -92,3 +92,58 @@
       color: #00a487;
     }
   }
+  .shape7{
+    animation-name: rotateme;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    right: 10%;
+    position: absolute;
+    top: 15%;
+    i{
+      color: #00a487; font-size: 30px;
+    }
+  }
+  .shape8{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    animation-name: rotateme;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    i{
+      color: #00a487;
+    }
+  }
+  .shape9{
+    animation-name: rotateme;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 5%;
+    position: absolute;
+    top: 60%;
+    i{
+      color: #00a487; font-size: 30px;
+    }
+  }
+
+  .shape10{
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    animation: animationFramesOne 15s linear infinite;
+    i{
+      color: #00a487;font-size: 30px;
+    }
+  }
+  .shape11{
+    position: absolute;
+    right: 25%;
+    animation: animationFramesOne 20s linear infinite;
+    bottom: 15%;
+    i{
+      color: #00a487;
+    }
+  }
