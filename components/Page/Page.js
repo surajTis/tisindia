@@ -8,6 +8,7 @@ import { BlogInsight } from "components/BlogInsight";
 import { HomeAbout } from "components/HomeAbout/HomeAbout";
 import { HomeService } from "components/HomeService";
 import { Award } from "components/Award";
+import { HomeTestimonial } from "components/HomeTestimonial";
 export const Page = (props) => {
   console.log("PAGE PROPS: ", props);
   return (
@@ -29,6 +30,7 @@ export const Page = (props) => {
       />
       <BlockRenderer blocks={props.blockContent} />
       <Award />
+      <HomeTestimonial />
       <HomeAbout />
       <BlogInsight />
       <Footer items={props.footerMenuItems}/>
