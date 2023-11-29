@@ -14,7 +14,7 @@ export const Banner = ({
       <div className="banner">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 banner-left">
               <h1 data-aos="fade-up" className="aos-init aos-animate">
                 {parse(bannerTitle)}
               </h1>
@@ -38,11 +38,18 @@ export const Banner = ({
               </p>
               <button className="lets-talk">Let&apos;s start a project</button>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 banner-right">
               <Image src={banner} alt="images"></Image>
             </div>
           </div>
         </div>
+        <span className="circle-banner-top"></span>
+        <span className="circle-banner-bottom"></span>
+        <div className="shape1"></div>
+        <div className="shape2"><i className="fa-light fa-triangle"></i></div>
+        <div className="shape3"><i className="fa-solid fa-xmark"></i></div>
+        <div className="shape4"><i className="fa-light fa-triangle"></i></div>
+        <div className="shape5"><i className="fa-light fa-triangle"></i></div>
       </div>
     </>
   );

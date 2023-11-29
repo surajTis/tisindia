@@ -28,12 +28,12 @@ export const HomeService = ({
                           ></Image>
                         </div>
                         <span>{data.serviceBlockSubtitle}</span>
-                        <h6>{data.serviceBlockTitle}</h6>
+                        <h4>{data.serviceBlockTitle}</h4>
                         <p>{data.serviceBlockContent}</p>
                         {(data.serviceBlockButtons || []).map((btnData, key) => (
                           <>
                             <Link href={btnData.serviceBlockButtonLink}>
-                              <a className="homebtn1">{btnData.serviceBlockButtonText}</a>
+                              <a className="home-service-btn">{btnData.serviceBlockButtonText}</a>
                             </Link>
                           </>
                         ))}
@@ -97,6 +97,13 @@ export const HomeService = ({
             </div> */}
           </div>
         </div>
+        <div className="shape1"></div>
+        <div className="shape6"><i className="fa-light fa-triangle"></i></div>
+        <div className="shape7"><i className="fa-solid fa-xmark"></i></div>
+        <div className="shape8"><i className="fa-light fa-triangle"></i></div>
+        <div className="shape9"><i className="fa-solid fa-xmark"></i></div>
+        <div className="shape10"><i className="fa-light fa-circle"></i></div>
+        <div className="shape11"><i className="fa-light fa-triangle"></i></div>
       </div>
     </>
   );

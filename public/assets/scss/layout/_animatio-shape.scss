@@ -1,0 +1,157 @@
+@use "../utils" as *;
+.shape1 {top: 20%; left: 30px; animation: rotate3d 4s linear infinite; opacity: .4; position: absolute; width: 55px; height: 55px;
+    background-image: linear-gradient( 70deg,  hsl(41deg 93% 54%) 0%,  hsl(43deg 90% 52%) 0%, hsl(45deg 87% 51%) 1%, hsl(47deg 84% 50%) 5%,
+      hsl(49deg 83% 50%) 17%, hsl(51deg 81% 49%) 82%, hsl(53deg 79% 49%) 93%, hsl(55deg 76% 48%) 97%,  hsl(58deg 73% 48%) 99%,
+      hsl(61deg 69% 49%) 100%,  hsl(64deg 67% 50%) 100%  );
+    border-radius: 100%;
+  }
+  @keyframes rotate3d {
+    0% {
+      transform:rotateY(0deg)
+    }
+    to {
+      transform:rotateY(1turn)
+    }
+  }
+  .shape2{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    animation: animationFramesOne 20s linear infinite;
+    i{
+      color: #fff;
+    }
+  }
+  @keyframes animationFramesOne {
+    0% {
+      -webkit-transform:translate(0) rotate(0deg)
+    }
+    20% {
+      -webkit-transform:translate(73px,-1px) rotate(36deg)
+    }
+    40% {
+      -webkit-transform:translate(141px,72px) rotate(72deg)
+    }
+    60% {
+      -webkit-transform:translate(83px,122px) rotate(108deg)
+    }
+    80% {
+      -webkit-transform:translate(-40px,72px) rotate(144deg)
+    }
+    to {
+      -webkit-transform:translate(0) rotate(0deg)
+    }
+  }
+  .shape3{
+    animation-name: rotateme;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    right: 10%;
+    position: absolute;
+    top: 15%;
+    i{
+      color: #fff; font-size: 30px;
+    }
+  }
+  @keyframes rotateme {
+    0% {
+      transform:rotate(0deg)
+    }
+    to {
+      transform:rotate(1turn)
+    }
+  }
+  .shape4{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    animation-name: rotateme;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    i{
+      color: #fff;
+    }
+  }
+  .shape5{
+    position: absolute;
+    bottom: 15%;
+    right: 25%;
+    animation: animationFramesOne 20s linear infinite;
+    i{
+      color: #0dfbc6;
+    }
+  }
+
+  .shape6{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    animation: animationFramesOne 20s linear infinite;
+    i{
+      color: #00a487;
+    }
+  }
+  .shape7{
+    animation-name: rotateme;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    right: 10%;
+    position: absolute;
+    top: 15%;
+    i{
+      color: #00a487; font-size: 30px;
+    }
+    @media #{$bxxl} {
+      right: 30px;
+    }
+    @media #{$xl2} {
+      right: 30px;
+      top:15px;
+    }
+  }
+  .shape8{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    animation-name: rotateme;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    i{
+      color: #00a487;
+    }
+  }
+  .shape9{
+    animation-name: rotateme;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 5%;
+    position: absolute;
+    top: 60%;
+    i{
+      color: #00a487; font-size: 30px;
+    }
+  }
+
+  .shape10{
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    animation: animationFramesOne 15s linear infinite;
+    i{
+      color: #00a487;font-size: 30px;
+    }
+  }
+  .shape11{
+    position: absolute;
+    right: 25%;
+    animation: animationFramesOne 20s linear infinite;
+    bottom: 15%;
+    i{
+      color: #00a487;
+    }
+  }

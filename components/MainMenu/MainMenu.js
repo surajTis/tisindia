@@ -1,9 +1,11 @@
-
 import React, { useState, useRef, useEffect } from "react";
-
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/img/logo/sticky-logo-white-01.svg";
+import Laravel from "../../public/assets/img/logo/laravel.svg";
+import View from "../../public/assets/img/logo/view.svg";
+import Next from "../../public/assets/img/logo/next-js.svg";
+import Cms from "../../public/assets/img/logo/cms.svg";
 import useSticky from "hooks/use-sticky";
 import Sidebar from "../../common/sidebar";
 
@@ -17,29 +19,72 @@ export const MainMenu = ({
   const { sticky } = useSticky();
 
 
-  // const [open, setOpen] = useState(false);
-
-  //   const ToggleSidebar = () => {
-  //     open === true ? setOpen(false) : setOpen(true);
-  //   }
-  //   const ref = useRef();
-
-  //   useEffect(() => {
-  //     const handleClickOutside = (event) => {
-  //       if (!ref.current.contains(event.target)) {
-  //         setOpen(false);
-  //       }
-  //     };
-  //     document.addEventListener("mousedown", handleClickOutside);
-  //   }, [ref]);
-
   const [isActive, setIsActive] = useState(false);
-   
-  
+
+
 
   return (
     <>
+    
       <header className={`header ${sticky ? "header-sticky" : ""}`}>
+      <nav className="upper-nav">
+      <div className="container">
+        <div className="navbar-brand">
+          <div className="navbar-ul">
+            <p>
+              <span>
+                <strong>Official Partner of </strong>
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+              <span></span>
+            </p>
+            <a href="#">
+            <Image
+                    src={Laravel}
+                    width={20}
+                    height={20}
+                    alt="Picture of the author"
+                  />
+              <span class="has-margin-left-5">Laravel</span>
+            </a>
+            <a href="#">
+            <Image
+                    src={View}
+                    width={20}
+                    height={20}
+                    alt="Picture of the author"
+                  />
+              <span class="has-margin-left-5">VueJs</span>
+            </a>
+            <a href="#">
+            <Image
+                    src={Next}
+                    alt="Picture of the author"
+                  />
+              <span class="has-margin-left-5">NuxtJs</span>
+            </a>
+            <a href="#">
+            <Image
+                    src={Cms}
+                    width={20}
+                    height={20}
+                    alt="Picture of the author"
+                  />
+              <span class="has-margin-left-5">vaah<strong>cms</strong></span>
+            </a>
+          </div>
+        </div>
+        <div className="navbar-menu">
+          <div className="navbar-menu-end">
+            <a href="#">
+              New
+            </a>
+            <span>we're hiring!</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
         <div className="container">
           <div className="header-row">
             <div className="logo">

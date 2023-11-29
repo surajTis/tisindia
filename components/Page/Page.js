@@ -7,6 +7,7 @@ import { Footer } from "components/Footer";
 import { BlogInsight } from "components/BlogInsight";
 import { HomeAbout } from "components/HomeAbout/HomeAbout";
 import { HomeService } from "components/HomeService";
+import { DevelopmentServices } from "components/DevelopmentServices";
 import { Award } from "components/Award";
 import { HomeTestimonial } from "components/HomeTestimonial";
 export const Page = (props) => {
@@ -29,10 +30,7 @@ export const Page = (props) => {
         callToActionLabel={props.callToActionLabel}
       />
       <BlockRenderer blocks={props.blockContent} />
-      <Award />
       <HomeTestimonial />
-      <HomeAbout />
-      <BlogInsight />
       <Footer items={props.footerMenuItems}/>
     </PageWrapper>
   );

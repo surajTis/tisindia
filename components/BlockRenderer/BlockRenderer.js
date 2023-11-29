@@ -2,6 +2,10 @@
 import { Banner } from "components/Banner";
 import { CaseStudy } from "components/CaseStudy";
 import { HomeService } from "components/HomeService";
+import { DevelopmentServices } from "components/DevelopmentServices";
+import { Award } from "components/Award";
+import { HomeAbout } from "components/HomeAbout/HomeAbout";
+import { BlogInsight } from "components/BlogInsight";
 export const BlockRenderer = ({ blocks }) => {
   return blocks.map((block, i) => {
     switch (block.fieldGroupName) {
@@ -35,6 +39,27 @@ export const BlockRenderer = ({ blocks }) => {
             servicesBlockSubtitle={block.servicesBlockSubtitle}
             serviceBlocks={block.serviceBlocks}
           />
+        );
+      }
+
+      case "Page_Maincontent_MainContent_SoftwareDevelopmentBlock": {
+        return (
+          <DevelopmentServices />
+        );
+      }
+      case "Page_Maincontent_MainContent_AwardsSection": {
+        return (
+          <Award />
+        );
+      }
+      case "Page_Maincontent_MainContent_AboutSection": {
+        return (
+          <HomeAbout />
+        );
+      }
+      case "Page_Maincontent_MainContent_BloginsightSection": {
+        return (
+          <BlogInsight />
         );
       }
 
