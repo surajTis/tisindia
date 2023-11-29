@@ -73,6 +73,9 @@
           width: 40%;
             @media #{$xs} {
               width: 100%; 
+              span{
+                display: block !important;
+              }
           }
         }
         .w-60 {
@@ -80,7 +83,7 @@
           padding-left: 40px;
               @media #{$xs} {
                 width: 100%; 
-                padding-left: 0;
+                padding-left:15px;
                 padding-top: 30px;
             }
           .about-home-content{
@@ -99,6 +102,9 @@
   padding: 3rem 0rem;
   background: aliceblue;
   position: relative;
+  @media #{$xs}{
+    padding-bottom: 5rem;
+  }
   .awards-inner{
     padding: 0px 0px 30px;
     position: relative;
