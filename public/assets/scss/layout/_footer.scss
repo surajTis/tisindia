@@ -1,3 +1,4 @@
+@use "../utils" as *;
 .footer {
   background-image: url(../../img/banner/footer-banner.webp),
   linear-gradient(to right top, #374d6f, #004d7a, #24868e, #0c975f, #6d8e22);
@@ -7,7 +8,14 @@
 
   .footer-outer {
     padding: 3rem;
-
+    @media #{$md , $xs}{
+      padding: 3rem 0.5rem 1rem;
+    }
+    .footer-bx{
+      @media #{$md , $xs}{
+        margin-bottom: 30px;
+      }
+    }
     h3 {
       color: var(--tp-common-white);
       font-weight: 700;
@@ -64,6 +72,9 @@
   .footer-inner {
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.25) !important;
+    @media #{$xs}{
+      padding: 2rem 1rem;
+    }
     .inner-section {
       p {
         color: hsla(0, 0%, 100%, 0.85);

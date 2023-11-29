@@ -212,7 +212,9 @@
   padding: 30px;
   transform: translateX(100%);
   overflow-y: scroll;
-
+  @media #{$xs}{
+    width: 300px;
+  }
   .tpsideinfo__close {
     color: #fff;
     right: 30px;

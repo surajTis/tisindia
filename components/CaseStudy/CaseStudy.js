@@ -16,15 +16,22 @@ export const CaseStudy = ({ caseStudyTitle, caseStudySlider }) => {
     centerPadding:'0px',
     cssEase: 'linear',
     speed: 2000,
+    // rtl:true,
     responsive: [
       {
-        breakpoint: 768, // Adjust the breakpoint to your needs
+        breakpoint: 991, 
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768, 
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480, // Adjust the breakpoint to your needs
+        breakpoint: 480, 
         settings: {
           slidesToShow: 2,
         },
