@@ -140,3 +140,7 @@ input[type="color"] {
 .include-bg {
   @include background();
 }
+
+div#__next {
+  overflow: hidden;
+}
