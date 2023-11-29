@@ -34,7 +34,7 @@ export const MainMenu = ({
             <p>
               <span>
                 <strong>Official Partner of </strong>
-                <i class="fa-solid fa-angle-right"></i>
+                <i className="fa-solid fa-angle-right"></i>
               </span>
               <span></span>
             </p>
@@ -45,7 +45,7 @@ export const MainMenu = ({
                     height={20}
                     alt="Picture of the author"
                   />
-              <span class="has-margin-left-5">Laravel</span>
+              <span className="has-margin-left-5">Laravel</span>
             </a>
             <a href="#">
             <Image
@@ -54,7 +54,7 @@ export const MainMenu = ({
                     height={20}
                     alt="Picture of the author"
                   />
-              <span class="has-margin-left-5">VueJs</span>
+              <span className="has-margin-left-5">VueJs</span>
             </a>
             <a href="#">
             <Image
@@ -70,7 +70,7 @@ export const MainMenu = ({
                     height={20}
                     alt="Picture of the author"
                   />
-              <span class="has-margin-left-5">vaah<strong>cms</strong></span>
+              <span className="has-margin-left-5">vaah<strong>cms</strong></span>
             </a>
           </div>
         </div>
