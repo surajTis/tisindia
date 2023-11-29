@@ -2,6 +2,9 @@
 
 .homeservice-outer {
   padding: 3rem 0rem; position: relative;
+  @media #{$xs}{
+    padding-bottom: 1rem;
+  }
   h2 {
     color: var(--tp-heading-primary);
     font-weight: var(--tp-fw-bold);
@@ -41,6 +44,9 @@
       @media #{$md, $xs}{
         padding-bottom: 2.0625rem;
         padding-top: 2.0625rem;
+      }
+      @media #{$xs}{
+        padding:1.5rem;
       }
       span {
         color: #777;

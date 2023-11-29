@@ -11,7 +11,7 @@ export const Footer = ({ items }) => {
         <section className="footer-outer">
           <div className="container">
             <div className="row">
-              <div className="col-md-3 col-lg-3">
+              <div className="col-md-3 col-lg-3 col-md-6 footer-bx">
                 <h3>Our Services</h3>
                 <ul>
                   <li>
@@ -28,7 +28,7 @@ export const Footer = ({ items }) => {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-3 col-lg-3">
+              <div className="col-md-3 col-lg-3 col-md-6 footer-bx">
                 <h3>Development</h3>
                 <ul>
                   <li>
@@ -45,7 +45,7 @@ export const Footer = ({ items }) => {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-2 col-lg-2">
+              <div className="col-md-2 col-lg-2 col-md-6 footer-bx">
                 <h3>Others</h3>
                 <ul>
                   <li>
@@ -65,7 +65,7 @@ export const Footer = ({ items }) => {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-4 col-lg-4">
+              <div className="col-md-4 col-lg-4 col-md-6 footer-bx">
                 <p>Copyright © 2023 TIS. All rights reserved.</p>
                 <ul className="terms">
                   <li>

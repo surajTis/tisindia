@@ -56,27 +56,46 @@
                     }
                 }
             }
+            @media #{$xs} {
+                .slick-arrow {
+                    border: 1px solid #000; width: 35px; height: 35px; border-radius: 100%; z-index: 9;
+                    background: #fff;
+                    &:hover{
+                        border: 1px solid #1ca571;
+                        background: linear-gradient(to right top, #02a7da, #00a7cd, #00a6bf, #00a4af, #00a29e, #00a294, #00a288, #16a27b, #1ca571, #28a865, #37aa58, #46ac48);
+                        &::before{
+                            color: #fff !important;
+                        }
+                    }
+                }
+                .slick-prev{
+                    left: 0;
+                    &::before{
+                        color: #000;
+                        content: "\f104";
+                        font-family: "Font Awesome 6 Pro";
+                    }
+                }
+                .slick-next{
+                    right: 0;
+                    &::before{
+                        color: #000;
+                        content: "\f105";
+                        font-family: "Font Awesome 6 Pro";
+                    }
+                }
+            }
         }
 
-        .case-study-two {
-            padding: 40px 0px 30px;
 
-            .case-slide {
-                display: flex !important;
-                overflow: hidden;
-                padding: 20px;
+        .case-study-two{ padding: 40px 0px 30px;
+            .case-slide{
+                display: flex !important; overflow: hidden; padding: 20px; 
+                .case-slide-bx-left{
+                   width: 33.33%; position: relative;margin-left: -27px; min-width: 380px;padding-right:30px;
+                    h3{
+                        display: flex; align-items: center; position: absolute; top:0;
 
-                .case-slide-bx-left {
-                    width: 33.33%;
-                    position: relative;
-                    margin-left: -27px;
-                    min-width: 380px;
-
-                    h3 {
-                        display: flex;
-                        align-items: center;
-                        position: absolute;
-                        top: 0;
                     }
 
                     ul {
@@ -121,6 +140,15 @@
                     box-shadow: 0 1px 16px 0 #e0fdff, 0 0 0 1px rgb(247, 250, 255);
                     padding: 10px;
                     background: #fff;
+                }
+                @media #{$xs} {
+                    flex-wrap: wrap;
+                    .case-slide-bx-left{
+                        width: 100%;
+                    }
+                    .case-slide-bx-right{
+                        width: 100%;
+                    }
                 }
             }
         }
