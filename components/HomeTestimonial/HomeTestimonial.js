@@ -313,7 +313,7 @@ export const HomeTestimonial = () => {
                   the principles of UX with a functional design which is what we
                   intended for.
                 </p>
-                <div class="rating">
+                <div className="rating">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
