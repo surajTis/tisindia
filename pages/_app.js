@@ -1,5 +1,3 @@
-// import '../public/css/bootstrap.min.css';
-// import '../public/css/style.css';
 import "../styles/index.scss";
 
 import LoadingBar from 'react-top-loading-bar'

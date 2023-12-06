@@ -30,7 +30,8 @@ export const HomeAbout = () => {
                 <div className="home-inner-content">
                   <div className="row">
                     <div className="col-md-6 w-40">
-                      <Image src={Who1} />
+                      <Image src={Who1}
+                        alt="" />
                     </div>
                     <div className="col-md-6 w-60">
                       <div className="about-home-content">
@@ -66,7 +67,7 @@ export const HomeAbout = () => {
                 <div className="home-inner-content">
                   <div className="row">
                     <div className="col-md-6 w-40">
-                      <Image src={Choose} />
+                      <Image src={Choose} alt="" />
                     </div>
                     <div className="col-md-6 w-60">
                       <div className="about-home-content">
@@ -100,7 +101,7 @@ export const HomeAbout = () => {
                 <div className="home-inner-content">
                   <div className="row">
                     <div className="col-md-6 w-40">
-                      <Image src={Who} />
+                      <Image src={Who} alt="" />
                     </div>
                     <div className="col-md-6 w-60">
                       <div className="about-home-content">
@@ -134,7 +135,7 @@ export const HomeAbout = () => {
                 <div className="home-inner-content">
                   <div className="row">
                     <div className="col-md-6 w-40">
-                      <Image src={Web} />
+                      <Image src={Web} alt="" />
                     </div>
                     <div className="col-md-6 w-60">
                       <div className="about-home-content">
