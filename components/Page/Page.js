@@ -1,14 +1,8 @@
 import { BlockRenderer } from "components/BlockRenderer";
-import { CaseStudy } from "components/CaseStudy";
 import { PageWrapper } from "context/page";
 import Head from "next/head";
 import { MainMenu } from "components/MainMenu";
 import { Footer } from "components/Footer";
-import { BlogInsight } from "components/BlogInsight";
-import { HomeAbout } from "components/HomeAbout/HomeAbout";
-import { HomeService } from "components/HomeService";
-import { DevelopmentServices } from "components/DevelopmentServices";
-import { Award } from "components/Award";
 import { HomeTestimonial } from "components/HomeTestimonial";
 export const Page = (props) => {
   console.log("PAGE PROPS: ", props);

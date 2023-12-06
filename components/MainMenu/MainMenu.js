@@ -61,7 +61,7 @@ export const MainMenu = ({
                     src={Next}
                     alt="Picture of the author"
                   />
-              <span class="has-margin-left-5">NuxtJs</span>
+              <span className="has-margin-left-5">NuxtJs</span>
             </a>
             <a href="#">
             <Image
@@ -79,8 +79,8 @@ export const MainMenu = ({
             <a href="#">
               New
             </a>
-            <span>we're hiring!</span>
-            <i class="fa-solid fa-angle-right"></i>
+            <span>we&apos;re hiring!</span>
+            <i className="fa-solid fa-angle-right"></i>
           </div>
         </div>
       </div>
