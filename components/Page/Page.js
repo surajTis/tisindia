@@ -24,7 +24,7 @@ export const Page = (props) => {
         callToActionLabel={props.callToActionLabel}
       />
       <BlockRenderer blocks={props.blockContent} />
-      <HomeTestimonial />
+      {/* <HomeTestimonial /> */}
       <Footer items={props.footerMenuItems}/>
     </PageWrapper>
   );
