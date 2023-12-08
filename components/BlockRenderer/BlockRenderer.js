@@ -21,15 +21,15 @@ export const BlockRenderer = ({ blocks }) => {
         );
       }
 
-      case "Page_Maincontent_MainContent_CaseStudiesBlock": {
-        return (
-          <CaseStudy
-            key={i}
-            caseStudyTitle={block.caseStudiesBlockTitle}
-            caseStudySlider={block.caseStudiesSlider}
-          />
-        );
-      }
+      // case "Page_Maincontent_MainContent_CaseStudiesBlock": {
+      //   return (
+      //     <CaseStudy
+      //       key={i}
+      //       caseStudyTitle={block.caseStudiesBlockTitle}
+      //       caseStudySlider={block.caseStudiesSlider}
+      //     />
+      //   );
+      // }
 
       case "Page_Maincontent_MainContent_ServicesBlock": {
         return (
@@ -47,11 +47,11 @@ export const BlockRenderer = ({ blocks }) => {
           <DevelopmentServices />
         );
       }
-      case "Page_Maincontent_MainContent_AwardsSection": {
-        return (
-          <Award />
-        );
-      }
+      // case "Page_Maincontent_MainContent_AwardsSection": {
+      //   return (
+      //     <Award />
+      //   );
+      // }
       case "Page_Maincontent_MainContent_AboutSection": {
         return (
           <HomeAbout />
