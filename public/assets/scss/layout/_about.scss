@@ -1,34 +1,44 @@
 @use "../utils" as *;
+
 .homeabout-outer {
-  background: url(../../img/about/home-about-banner.png), linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd);
-  padding: 3rem 0rem 4rem; position: relative;
+  background: url(../../img/about/home-about-banner.png), linear-gradient(to left bottom, #fffcff, #fbfaff, #effbff, #e0fdff, #d5fefd);
+  padding: 3rem 0rem 4rem;
+  position: relative;
+
   .homeabout-content {
     margin-bottom: 30px;
+
     h2 {
       font-size: var(--tp-fz-h2);
       color: var(--tp-heading-primary);
       text-align: center;
       font-weight: var(--tp-fw-bold);
-      @media #{$md}{
+
+      @media #{$md} {
         font-size: var(--tp-fz-h2);
       }
-      @media #{$xs}{
+
+      @media #{$xs} {
         font-size: var(--tp-fz-h6);
       }
     }
-    p{
+
+    p {
       text-align: center;
       color: #6d6685;
       font-weight: 400;
     }
   }
+
   .homeabout-inner {
     .nav-tabs {
       border-bottom: 0;
       justify-content: center;
       margin-bottom: 40px;
+
       .nav-item {
         border-bottom: 1px solid #5375c6;
+
         .nav-link {
           border-top: none;
           border-left: none;
@@ -41,6 +51,7 @@
           color: #312852;
           font-size: 1.25rem;
           position: relative;
+
           &::after {
             width: 0px;
             height: 2px;
@@ -52,170 +63,201 @@
             transition: all 0.5s;
           }
 
-            @media #{$xs}{
-              font-size: 16px;
-            }
+          @media #{$xs} {
+            font-size: 16px;
+          }
         }
+
         .nav-link.active {
           font-weight: 700;
           color: #312852;
+
           &::after {
             width: 100%;
           }
         }
       }
     }
-    .home-inner-content{
+
+    .home-inner-content {
       margin-top: 70px;
+
       .row {
         align-items: center;
+
         .w-40 {
           width: 40%;
-            @media #{$xs} {
-              width: 100%; 
-              span{
-                display: block !important;
-              }
+
+          @media #{$xs} {
+            width: 100%;
+
+            span {
+              display: block !important;
+            }
           }
         }
+
         .w-60 {
           width: 60%;
           padding-left: 40px;
-              @media #{$xs} {
-                width: 100%; 
-                padding-left:15px;
-                padding-top: 30px;
+
+          @media #{$xs} {
+            width: 100%;
+            padding-left: 15px;
+            padding-top: 30px;
+          }
+
+          .about-home-content {
+            h3 {
+              font-size: var(--tp-fz-h3);
+              margin-bottom: 20px;
+              line-height: 32px;
             }
-          .about-home-content{
-            h3{font-size: var(--tp-fz-h3); margin-bottom: 20px;line-height: 32px;}
-            p{
+
+            p {
               color: #6d6685;
             }
           }
         }
       }
     }
-    
+
   }
 }
-.Award-outer{
+
+.Award-outer {
   padding: 3rem 0rem;
   background: aliceblue;
   position: relative;
-  @media #{$xs}{
+
+  @media #{$xs} {
     padding-bottom: 5rem;
   }
-  .awards-inner{
+
+  .awards-inner {
     padding: 0px 0px 30px;
     position: relative;
-    h2{
+
+    h2 {
       color: var(--tp-heading-primary);
-    font-weight: var(--tp-fw-bold);
-    font-size: var(--tp-fz-h2);
-    text-align: center;
-    margin-bottom: 30px;
-    @media #{$md}{
+      font-weight: var(--tp-fw-bold);
       font-size: var(--tp-fz-h2);
-    }
-    @media #{$xs}{
-      font-size: var(--tp-fz-h6);
-    }
-    
-    }
-    .slick-slider{
-      position: initial;
-      .slick-list{
-        margin-left: -15px; margin-right: -15px; padding: 0px !important;
+      text-align: center;
+      margin-bottom: 30px;
+
+      @media #{$md} {
+        font-size: var(--tp-fz-h2);
       }
-      .slick-slide{
-        & > div{
+
+      @media #{$xs} {
+        font-size: var(--tp-fz-h6);
+      }
+
+    }
+
+    .slick-slider {
+      position: initial;
+
+      .slick-list {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 0px !important;
+      }
+
+      .slick-slide {
+        &>div {
           margin: 8px 15px;
-          .award-slide{
+
+          .award-slide {
             padding: 10px;
-            box-shadow: 5px 10px 15px 0 rgba(0,0,0,.1);
+            box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, .1);
             background: #fff;
-         
-              @media #{$xs} {
-                  display: flex!important;
-                  align-items: center;
-                  justify-content: center;
-                }
-            
+
+            @media #{$xs} {
+              display: flex !important;
+              align-items: center;
+              justify-content: center;
+            }
+
           }
         }
-       
-      }
-    .slick-next{
-      top: 40px;
-      right: 0;
-      height: 3.125rem;
-    width: 3.125rem;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 23px;
-    border: 1px solid #000;
-    font-size: 22px;
-   
-      &::before{
-        color: #000;
-    content: "\f105";
-    font-family: "Font Awesome 6 Pro";
-    
-      }
-      &:hover{
-        border: 1px solid #1ca571;
-        background: linear-gradient(to right top, #02a7da, #00a7cd, #00a6bf, #00a4af, #00a29e, #00a294, #00a288, #16a27b, #1ca571, #28a865, #37aa58, #46ac48);
 
-        &:before{
-          color:#fff
+      }
+
+      .slick-next {
+        top: 40px;
+        right: 0;
+        height: 3.125rem;
+        width: 3.125rem;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 23px;
+        border: 1px solid #000;
+        font-size: 22px;
+
+        &::before {
+          color: #000;
+          content: "\f105";
+          font-family: "Font Awesome 6 Pro";
+
         }
-      }
-      @media #{$xs}{
-        top: unset;
-         bottom: -55px;
-      }
-    }
-    .slick-prev{
-      right: 60px;
-      top: 40px;
-      left: auto;
-      height: 3.125rem;
-    width: 3.125rem;
-    border-radius: 8px;
-    display: flex;
-    border: 1px solid #000;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 23px;
-    font-size: 22px;
-    
-      &::before{
-        color: #000;
-    content: "\f104";
-    font-family: "Font Awesome 6 Pro";
-        
-      }
-      &:hover{
-        border: 1px solid #1ca571;
-        background: linear-gradient(to right top, #02a7da, #00a7cd, #00a6bf, #00a4af, #00a29e, #00a294, #00a288, #16a27b, #1ca571, #28a865, #37aa58, #46ac48);
 
-        &:before{
-          color:#fff
+        &:hover {
+          border: 1px solid #1ca571;
+          background: linear-gradient(to right top, #02a7da, #00a7cd, #00a6bf, #00a4af, #00a29e, #00a294, #00a288, #16a27b, #1ca571, #28a865, #37aa58, #46ac48);
+
+          &:before {
+            color: #fff
+          }
         }
-      }
 
-        @media #{$xs}{
+        @media #{$xs} {
           top: unset;
-           bottom: -55px;
+          bottom: -55px;
+        }
+      }
+
+      .slick-prev {
+        right: 60px;
+        top: 40px;
+        left: auto;
+        height: 3.125rem;
+        width: 3.125rem;
+        border-radius: 8px;
+        display: flex;
+        border: 1px solid #000;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 23px;
+        font-size: 22px;
+
+        &::before {
+          color: #000;
+          content: "\f104";
+          font-family: "Font Awesome 6 Pro";
+
         }
 
+        &:hover {
+          border: 1px solid #1ca571;
+          background: linear-gradient(to right top, #02a7da, #00a7cd, #00a6bf, #00a4af, #00a29e, #00a294, #00a288, #16a27b, #1ca571, #28a865, #37aa58, #46ac48);
+
+          &:before {
+            color: #fff
+          }
+        }
+
+        @media #{$xs} {
+          top: unset;
+          bottom: -55px;
+        }
+
+      }
     }
-  }
   }
 
 }
-
