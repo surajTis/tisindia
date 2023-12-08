@@ -44,7 +44,7 @@ export const BlockRenderer = ({ blocks }) => {
 
       case "Page_Maincontent_MainContent_SoftwareDevelopmentBlock": {
         return (
-          <DevelopmentServices />
+          <DevelopmentServices key={i} />
         );
       }
       // case "Page_Maincontent_MainContent_AwardsSection": {
@@ -54,17 +54,16 @@ export const BlockRenderer = ({ blocks }) => {
       // }
       case "Page_Maincontent_MainContent_AboutSection": {
         return (
-          <HomeAbout />
+          <HomeAbout key={i}/>
         );
       }
       case "Page_Maincontent_MainContent_BloginsightSection": {
         return (
-          <BlogInsight />
+          <BlogInsight key={i} />
         );
       }
 
       default: {
-        console.log("UNKNOWN: ", block);
         return null;
       }
     }

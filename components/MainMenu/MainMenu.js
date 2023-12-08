@@ -25,66 +25,66 @@ export const MainMenu = ({
 
   return (
     <>
-    
+
       <header className={`header ${sticky ? "header-sticky" : ""}`}>
-      <nav className="upper-nav">
-      <div className="container">
-        <div className="navbar-brand">
-          <div className="navbar-ul">
-            <p>
-              <span>
-                <strong>Official Partner of </strong>
-                <i className="fa-solid fa-angle-right"></i>
-              </span>
-              <span></span>
-            </p>
-            <a href="#">
-            <Image
+        <nav className="upper-nav">
+          <div className="container">
+            <div className="navbar-brand">
+              <div className="navbar-ul">
+                <p>
+                  <span>
+                    <strong>Official Partner of </strong>
+                    <i className="fa-solid fa-angle-right"></i>
+                  </span>
+                  <span></span>
+                </p>
+                <a href="#">
+                  <Image
                     src={Laravel}
                     width={20}
                     height={20}
                     alt="Picture of the author"
                   />
-              <span className="has-margin-left-5">Laravel</span>
-            </a>
-            <a href="#">
-            <Image
+                  <span className="has-margin-left-5">Laravel</span>
+                </a>
+                <a href="#">
+                  <Image
                     src={View}
                     width={20}
                     height={20}
                     alt="Picture of the author"
                   />
-              <span className="has-margin-left-5">VueJs</span>
-            </a>
-            <a href="#">
-            <Image
+                  <span className="has-margin-left-5">VueJs</span>
+                </a>
+                <a href="#">
+                  <Image
                     src={Next}
                     alt="Picture of the author"
                   />
-              <span className="has-margin-left-5">NuxtJs</span>
-            </a>
-            <a href="#">
-            <Image
+                  <span className="has-margin-left-5">NuxtJs</span>
+                </a>
+                <a href="#">
+                  <Image
                     src={Cms}
                     width={20}
                     height={20}
                     alt="Picture of the author"
                   />
-              <span className="has-margin-left-5">vaah<strong>cms</strong></span>
-            </a>
+                  <span className="has-margin-left-5">vaah<strong>cms</strong></span>
+                </a>
+              </div>
+            </div>
+            <div className="navbar-menu">
+              <div className="navbar-menu-end">
+                <a href="#">
+                  New
+                </a>
+                <span>we&apos;re hiring!</span>
+                <i className="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="navbar-menu">
-          <div className="navbar-menu-end">
-            <a href="#">
-              New
-            </a>
-            <span>we&apos;re hiring!</span>
-            <i className="fa-solid fa-angle-right"></i>
-          </div>
-        </div>
-      </div>
-    </nav>
+        </nav>
         <div className="container">
           <div className="header-row">
             <div className="logo">
@@ -99,12 +99,12 @@ export const MainMenu = ({
                 </a>
               </Link>
             </div>
-            <div className="navbar-toggler"   onClick={() => setIsActive(true)}>
-                <span className="hum-ico"></span>
-                <span className="hum-ico"></span>
-                <span className="hum-ico"></span>
+            <div className="navbar-toggler" onClick={() => setIsActive(true)}>
+              <span className="hum-ico"></span>
+              <span className="hum-ico"></span>
+              <span className="hum-ico"></span>
             </div>
-           
+
 
             <div className={`nav-area`}>
               <div className="main-menu">

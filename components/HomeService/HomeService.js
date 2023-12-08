@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Image from "next/image";
 import Vicon from "../../public/assets/img/about/icon-vue-light.svg";
 import Link from "next/link";
@@ -6,42 +7,45 @@ export const HomeService = ({
   servicesBlockSubtitle,
   serviceBlocks,
 }) => {
+
   return (
+
     <>
       <div className="homeservice-outer">
         <div className="container">
           <h2>{servicesBlockTitle}</h2>
           <p>{servicesBlockSubtitle}</p>
           <div className="row">
-            {(serviceBlocks || []).map((data, key) => (
-              <>
-                <div className={`col-md-${key == 0 ? "12" : "6"}`}>
-                  <div className="service-half">
-                    <div className="service-full card-left">
-                      <div className="card-content">
-                        <div className="img-icon">
-                          <Image
-                            src={data.serviceBlockImage.guid}
-                            width={42}
-                            height={36}
-                            alt={data.serviceBlockImage.alt}
-                          />
-                        </div>
-                        <span>{data.serviceBlockSubtitle}</span>
-                        <h4>{data.serviceBlockTitle}</h4>
-                        <p>{data.serviceBlockContent}</p>
-                        {(data.serviceBlockButtons || []).map((btnData, key) => (
-                          <>
-                            <Link href={btnData.serviceBlockButtonLink}>
-                              <a className="home-service-btn">{btnData.serviceBlockButtonText}</a>
-                            </Link>
-                          </>
-                        ))}
+            {(serviceBlocks || []).map((data, i) => (
+
+
+              <div className={`col-md-${i == 0 ? "12" : "6"}`} key={i}>
+                <div className="service-half">
+                  <div className="service-full card-left">
+                    <div className="card-content">
+                      <div className="img-icon">
+                        <Image
+                          src={data.serviceBlockImage.guid}
+                          width={42}
+                          height={36}
+                          alt={data.serviceBlockImage.alt}
+                        />
                       </div>
+                      <span>{data.serviceBlockSubtitle}</span>
+                      <h4>{data.serviceBlockTitle}</h4>
+                      <p>{data.serviceBlockContent}</p>
+                      {(data.serviceBlockButtons || []).map((btnData, j) => (
+                        <React.Fragment key={j}>
+                          <Link href={btnData.serviceBlockButtonLink} >
+                            <a className="home-service-btn">{btnData.serviceBlockButtonText}</a>
+                          </Link>
+                        </React.Fragment>
+                      ))}
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
+
             ))}
 
 
