@@ -39,7 +39,7 @@ export const Banner = ({
               <button className="lets-talk">Let&apos;s start a project</button>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 banner-right">
-              <Image src={banner} alt="images"></Image>
+              <Image priority={true} src={banner} alt="images"></Image>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { MainMenu } from "components/MainMenu";
 import { Footer } from "components/Footer";
 import { HomeTestimonial } from "components/HomeTestimonial";
 export const Page = (props) => {
-  console.log("PAGE PROPS: ", props);
+  
   return (
     <PageWrapper
       value={{

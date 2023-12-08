@@ -6,11 +6,13 @@ import Opticle from "../../public/assets/img/blog/opticle.png"
 
 const Blog = [
   {
+    id:1,
     src: Law,
     discription:
       "The Ultimate Guide to SEO for Attorneys and Law Firms in 2023",
   },
   {
+    id:2,
     src: Opticle,
     discription:
       "Location Page SEO: Concept of Optimizing Local Pages for Search Engine Visibility",

@@ -31,17 +31,20 @@ const Sidebar = ({ isActive, setIsActive }) => {
                 <button
                     onClick={() => setIsActive(false)}
                     className="tpsideinfo__close"
+                    aria-label="search"
                 >
                     <i className="fal fa-times"></i>
                 </button>
                 <div className="tpsideinfo__logo mb-40">
-                    <Link href="/">
-                        <Image
-                            src={Logo}
-                            width={160}
-                            height={60}
-                            alt="Picture of the author"
-                        />
+                    <Link href="/" passHref>
+                        <a>
+                            <Image
+                                src={Logo}
+                                width={160}
+                                height={60}
+                                alt="Picture of the author"
+                            />
+                        </a>
                     </Link>
                 </div>
 
