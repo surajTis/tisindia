@@ -26,7 +26,7 @@ export const MainMenu = ({
   return (
     <>
 
-      <header className={`header ${sticky ? "header-sticky" : ""}`}>
+      <header className={`header${sticky ? " header-sticky" : ""}`}>
         <nav className="upper-nav">
           <div className="container">
             <div className="navbar-brand">

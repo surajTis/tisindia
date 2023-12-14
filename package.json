@@ -21,8 +21,6 @@
         "html-react-parser": "^3.0.16",
         "next": "12.1.6",
         "numeral": "^2.0.6",
-        "postcss-flexbugs-fixes": "^5.0.2",
-        "postcss-preset-env": "^9.3.0",
         "query-string": "^7.1.1",
         "react": "18.2.0",
         "react-bootstrap": "^2.9.0",
@@ -37,8 +35,6 @@
         "uuid": "^8.3.2"
     },
     "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^5.0.0",
-        "autoprefixer": "^10.4.7",
         "eslint": "8.18.0",
         "eslint-config-next": "12.1.6",
         "postcss": "^8.4.14"
