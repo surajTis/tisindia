@@ -125,22 +125,6 @@ input[type="color"] {
 /*---------------------------------
     common classes css start 
 ---------------------------------*/
-
-.clear {
-  clear: both;
-}
-
-.z-index-1 {
-  z-index: 1;
-}
-
-.z-index-11 {
-  z-index: 11;
-}
-.include-bg {
-  @include background();
-}
-
 div#__next {
   overflow: hidden;
 }
